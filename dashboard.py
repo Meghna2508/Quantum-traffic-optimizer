@@ -1,4 +1,4 @@
-﻿"""
+"""
 Quantum-Enhanced Adaptive Urban Traffic Optimization
 Streamlit Hackathon Dashboard
 
@@ -602,8 +602,8 @@ with tab_network:
 
     st.write(
         """
-        The simulation environment models a coordinated urban corridor with 8 signalized intersections 
-        arranged in a 2Ã—4 grid network, connected by bidirectional arterial roadways.
+        The simulation environment models a coordinated urban arterial grid with 4 signalized intersections 
+        arranged in a 2x2 network (I1-I4), connected by bidirectional multilane roadways with perimeter entry/exit feeders.
         """
     )
 
@@ -611,12 +611,8 @@ with tab_network:
     nodes = [
         {"id": "I1", "x": 0, "y": 1, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
         {"id": "I2", "x": 1, "y": 1, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I3", "x": 2, "y": 1, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I4", "x": 3, "y": 1, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I5", "x": 0, "y": 0, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I6", "x": 1, "y": 0, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I7", "x": 2, "y": 0, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I8", "x": 3, "y": 0, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
+        {"id": "I3", "x": 0, "y": 0, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
+        {"id": "I4", "x": 1, "y": 0, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
     ]
     df_nodes = pd.DataFrame(nodes)
 
@@ -629,9 +625,9 @@ with tab_network:
         color_discrete_map={"NS_GREEN": "#38bdf8", "EW_GREEN": "#34d399"},
         size_max=30,
     )
-    fig_grid.update_traces(marker=dict(size=38, line=dict(width=2, color="#ffffff")), textposition="middle center", textfont=dict(size=14, color="white", family="JetBrains Mono"))
+    fig_grid.update_traces(marker=dict(size=42, line=dict(width=2, color="#ffffff")), textposition="middle center", textfont=dict(size=14, color="white", family="JetBrains Mono"))
     fig_grid.update_layout(
-        title="<b>Grid Network Layout (2Ã—4 Signalized Intersections)</b>",
+        title="<b>Grid Network Layout (2x2 Signalized Intersections)</b>",
         template="plotly_dark",
         paper_bgcolor="rgba(15,23,42,0.6)",
         plot_bgcolor="rgba(15,23,42,0.3)",

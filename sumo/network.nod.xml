@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nodes>
-    <node id="I1" x="0" y="200" type="traffic_light"/>
-    <node id="I2" x="200" y="200" type="traffic_light"/>
-    <node id="I3" x="400" y="200" type="traffic_light"/>
-    <node id="I4" x="600" y="200" type="traffic_light"/>
-    <node id="I5" x="0" y="0" type="traffic_light"/>
-    <node id="I6" x="200" y="0" type="traffic_light"/>
-    <node id="I7" x="400" y="0" type="traffic_light"/>
-    <node id="I8" x="600" y="0" type="traffic_light"/>
+    <!-- 4 Main Traffic Light Intersections forming the 2x2 Grid -->
+    <node id="I1" x="200" y="400" type="traffic_light"/>
+    <node id="I2" x="400" y="400" type="traffic_light"/>
+    <node id="I3" x="200" y="200" type="traffic_light"/>
+    <node id="I4" x="400" y="200" type="traffic_light"/>
+
+    <!-- Boundary feeder nodes (priority junctions for realistic entry/exit) -->
+    <node id="N1" x="200" y="600" type="priority"/>
+    <node id="N2" x="400" y="600" type="priority"/>
+    <node id="S3" x="200" y="0" type="priority"/>
+    <node id="S4" x="400" y="0" type="priority"/>
+    <node id="W1" x="0" y="400" type="priority"/>
+    <node id="W3" x="0" y="200" type="priority"/>
+    <node id="E2" x="600" y="400" type="priority"/>
+    <node id="E4" x="600" y="200" type="priority"/>
 </nodes>

@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <edges>
-
-    <!-- Top horizontal roads -->
+    <!-- Internal 2x2 Grid Horizontal Arterials -->
     <edge id="I1_I2" from="I1" to="I2" numLanes="2" speed="13.89"/>
     <edge id="I2_I1" from="I2" to="I1" numLanes="2" speed="13.89"/>
-
-    <edge id="I2_I3" from="I2" to="I3" numLanes="2" speed="13.89"/>
-    <edge id="I3_I2" from="I3" to="I2" numLanes="2" speed="13.89"/>
-
     <edge id="I3_I4" from="I3" to="I4" numLanes="2" speed="13.89"/>
     <edge id="I4_I3" from="I4" to="I3" numLanes="2" speed="13.89"/>
 
+    <!-- Internal 2x2 Grid Vertical Arterials -->
+    <edge id="I1_I3" from="I1" to="I3" numLanes="2" speed="13.89"/>
+    <edge id="I3_I1" from="I3" to="I1" numLanes="2" speed="13.89"/>
+    <edge id="I2_I4" from="I2" to="I4" numLanes="2" speed="13.89"/>
+    <edge id="I4_I2" from="I4" to="I2" numLanes="2" speed="13.89"/>
 
-    <!-- Bottom horizontal roads -->
-    <edge id="I5_I6" from="I5" to="I6" numLanes="2" speed="13.89"/>
-    <edge id="I6_I5" from="I6" to="I5" numLanes="2" speed="13.89"/>
+    <!-- North Boundary Arterials (entering/exiting I1 and I2) -->
+    <edge id="N1_I1" from="N1" to="I1" numLanes="2" speed="13.89"/>
+    <edge id="I1_N1" from="I1" to="N1" numLanes="2" speed="13.89"/>
+    <edge id="N2_I2" from="N2" to="I2" numLanes="2" speed="13.89"/>
+    <edge id="I2_N2" from="I2" to="N2" numLanes="2" speed="13.89"/>
 
-    <edge id="I6_I7" from="I6" to="I7" numLanes="2" speed="13.89"/>
-    <edge id="I7_I6" from="I7" to="I6" numLanes="2" speed="13.89"/>
+    <!-- South Boundary Arterials (entering/exiting I3 and I4) -->
+    <edge id="S3_I3" from="S3" to="I3" numLanes="2" speed="13.89"/>
+    <edge id="I3_S3" from="I3" to="S3" numLanes="2" speed="13.89"/>
+    <edge id="S4_I4" from="S4" to="I4" numLanes="2" speed="13.89"/>
+    <edge id="I4_S4" from="I4" to="S4" numLanes="2" speed="13.89"/>
 
-    <edge id="I7_I8" from="I7" to="I8" numLanes="2" speed="13.89"/>
-    <edge id="I8_I7" from="I8" to="I7" numLanes="2" speed="13.89"/>
+    <!-- West Boundary Arterials (entering/exiting I1 and I3) -->
+    <edge id="W1_I1" from="W1" to="I1" numLanes="2" speed="13.89"/>
+    <edge id="I1_W1" from="I1" to="W1" numLanes="2" speed="13.89"/>
+    <edge id="W3_I3" from="W3" to="I3" numLanes="2" speed="13.89"/>
+    <edge id="I3_W3" from="I3" to="W3" numLanes="2" speed="13.89"/>
 
-
-    <!-- Vertical roads -->
-    <edge id="I1_I5" from="I1" to="I5" numLanes="2" speed="13.89"/>
-    <edge id="I5_I1" from="I5" to="I1" numLanes="2" speed="13.89"/>
-
-    <edge id="I2_I6" from="I2" to="I6" numLanes="2" speed="13.89"/>
-    <edge id="I6_I2" from="I6" to="I2" numLanes="2" speed="13.89"/>
-
-    <edge id="I3_I7" from="I3" to="I7" numLanes="2" speed="13.89"/>
-    <edge id="I7_I3" from="I7" to="I3" numLanes="2" speed="13.89"/>
-
-    <edge id="I4_I8" from="I4" to="I8" numLanes="2" speed="13.89"/>
-    <edge id="I8_I4" from="I8" to="I4" numLanes="2" speed="13.89"/>
-
+    <!-- East Boundary Arterials (entering/exiting I2 and I4) -->
+    <edge id="E2_I2" from="E2" to="I2" numLanes="2" speed="13.89"/>
+    <edge id="I2_E2" from="I2" to="E2" numLanes="2" speed="13.89"/>
+    <edge id="E4_I4" from="E4" to="I4" numLanes="2" speed="13.89"/>
+    <edge id="I4_E4" from="I4" to="E4" numLanes="2" speed="13.89"/>
 </edges>

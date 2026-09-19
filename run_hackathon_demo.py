@@ -75,7 +75,7 @@ def run_demo(
     emergency_step: int = 35,
     congestion_step: int = 50,
     congestion_clear_step: int = 80,
-    congestion_edge: str = "I2_I3",
+    congestion_edge: str = "I1_I2",
     quantum_intersections: List[str] = None,
     shots: int = 512,
     maxiter: int = 15,
@@ -304,7 +304,7 @@ def main():
     parser.add_argument("--emergency-step", type=int, default=35, help="Step to inject emergency vehicle (default: 35)")
     parser.add_argument("--congestion-step", type=int, default=50, help="Step to trigger incident congestion (default: 50)")
     parser.add_argument("--congestion-clear-step", type=int, default=80, help="Step to clear incident congestion (default: 80)")
-    parser.add_argument("--congestion-edge", type=str, default="I2_I3", help="SUMO edge ID for incident (default: I2_I3)")
+    parser.add_argument("--congestion-edge", type=str, default="I1_I2", help="SUMO edge ID for incident (default: I1_I2)")
     parser.add_argument("--quantum-intersections", type=str, default="I1,I2", help="Comma-separated list of intersections for QAOA (default: I1,I2)")
     parser.add_argument("--shots", type=int, default=512, help="Qiskit Aer shots (default: 512)")
     parser.add_argument("--maxiter", type=int, default=15, help="Classical optimizer iterations for QAOA (default: 15)")

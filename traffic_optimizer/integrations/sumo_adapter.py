@@ -35,7 +35,7 @@ class SUMOAdapter:
         self.intersections = (
             intersections
             if intersections is not None
-            else ["I1", "I2", "I3", "I4", "I5", "I6", "I7", "I8"]
+            else ["I1", "I2", "I3", "I4"]
         )
         self.arrived_vehicles_count = 0
         self.emergency_vehicles_injected: Dict[str, float] = {}
@@ -199,19 +199,21 @@ class SUMOAdapter:
 
     def _apply_intersection_decision(self, iid: str, decision: SignalDecision) -> None:
         """Sets phase state for a single junction in SUMO."""
-        # SUMO standard 2-lane traffic light state pattern:
-        # Phase 0: North/South Green ("GgGgrrrrGgGgrrrr" or "GGggrrrrGGggrrrr")
-        # Phase 2: East/West Green   ("rrrrGGggrrrrGGgg")
-        if decision.phase == SignalPhase.NORTH_SOUTH:
-            state_str = "GgGgrrrrGgGgrrrr"
-        else:
-            state_str = "rrrrGgGgrrrrGgGg"
-
+        phase_idx = 0 if decision.phase == SignalPhase.NORTH_SOUTH else 2
         try:
-            # Set state string dynamically
-            traci.trafficlight.setRedYellowGreenState(iid, state_str)
+            traci.trafficlight.setPhase(iid, phase_idx)
+            traci.trafficlight.setPhaseDuration(iid, float(decision.duration))
         except traci.TraCIException:
-            pass
+            try:
+                curr_state = traci.trafficlight.getRedYellowGreenState(iid)
+                half = max(1, len(curr_state) // 2)
+                if decision.phase == SignalPhase.NORTH_SOUTH:
+                    state_str = "G" * half + "r" * (len(curr_state) - half)
+                else:
+                    state_str = "r" * half + "G" * (len(curr_state) - half)
+                traci.trafficlight.setRedYellowGreenState(iid, state_str)
+            except Exception:
+                pass
 
     def inject_emergency_vehicle(
         self, route_id: str = "R1", vehicle_id: str = "emergency_1"
@@ -221,11 +223,19 @@ class SUMOAdapter:
             self.start_simulation()
 
         try:
-            # Ensure emergency vehicle type exists
+            # Ensure emergency vehicle type exists with prominent emergency styling
             if "emergency" not in traci.vehicletype.getIDList():
-                traci.vehicletype.copy("car", "emergency")
-                traci.vehicletype.setColor("emergency", (255, 0, 0, 255))
-                traci.vehicletype.setSpeedFactor("emergency", 1.5)
+                try:
+                    traci.vehicletype.copy("car", "emergency")
+                except Exception:
+                    pass
+                try:
+                    traci.vehicletype.setColor("emergency", (255, 0, 0, 255))
+                    traci.vehicletype.setSpeedFactor("emergency", 1.8)
+                    traci.vehicletype.setVehicleClass("emergency", "emergency")
+                    traci.vehicletype.setShapeClass("emergency", "emergency")
+                except Exception:
+                    pass
 
             traci.vehicle.add(
                 vehID=vehicle_id,
@@ -363,19 +373,32 @@ class SUMOAdapter:
     @staticmethod
     def _classify_lane_direction(lane_id: str, iid: str) -> str:
         """Determines cardinal approach direction ('N','S','E','W') for a lane leading to iid."""
-        if "I1_" in lane_id or "I5_" in lane_id:
-            return "W"
-        elif "I4_" in lane_id or "I8_" in lane_id:
-            return "E"
-        elif "_I1" in lane_id or "_I2" in lane_id or "_I3" in lane_id or "_I4" in lane_id:
+        edge_id = lane_id.rsplit("_", 1)[0]
+        mapping = {
+            "I1": {"N1_I1": "N", "I3_I1": "S", "I2_I1": "E", "W1_I1": "W"},
+            "I2": {"N2_I2": "N", "I4_I2": "S", "E2_I2": "E", "I1_I2": "W"},
+            "I3": {"I1_I3": "N", "S3_I3": "S", "I4_I3": "E", "W3_I3": "W"},
+            "I4": {"I2_I4": "N", "S4_I4": "S", "E4_I4": "E", "I3_I4": "W"},
+        }
+        if iid in mapping and edge_id in mapping[iid]:
+            return mapping[iid][edge_id]
+
+        if "N" in edge_id:
             return "N"
-        else:
+        elif "S" in edge_id:
             return "S"
+        elif "E" in edge_id:
+            return "E"
+        elif "W" in edge_id:
+            return "W"
+        return "N"
 
     @staticmethod
     def _parse_sumo_phase_state(state_str: str) -> SignalPhase:
         """Parses SUMO traffic light state string to SignalPhase."""
-        # If first 4 chars have 'G' or 'g', North-South is green
-        if len(state_str) >= 4 and ("G" in state_str[:4] or "g" in state_str[:4]):
+        half = max(1, len(state_str) // 2)
+        ns_greens = sum(1 for c in state_str[:half] if c in ("G", "g"))
+        ew_greens = sum(1 for c in state_str[half:] if c in ("G", "g"))
+        if ns_greens >= ew_greens:
             return SignalPhase.NORTH_SOUTH
         return SignalPhase.EAST_WEST

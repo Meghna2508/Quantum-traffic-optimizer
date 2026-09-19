@@ -84,7 +84,7 @@ class SimulationOrchestrator:
         emergency_route: str = "R1",
         congestion_inject_step: Optional[int] = None,
         congestion_clear_step: Optional[int] = None,
-        congestion_edge: str = "I2_I3",
+        congestion_edge: str = "I1_I2",
         congestion_reduction: float = 0.2,
     ) -> None:
         self.controller = controller
@@ -128,6 +128,8 @@ class SimulationOrchestrator:
                 events: List[str] = []
 
                 # --- Dynamic Events ---
+                trigger_optimization = (step % self.optimization_interval == 0)
+
                 if self.emergency_inject_step and step == self.emergency_inject_step:
                     veh_id = f"emergency_{self.controller_name}"
                     result = adapter.inject_emergency_vehicle(
@@ -135,6 +137,7 @@ class SimulationOrchestrator:
                         vehicle_id=veh_id,
                     )
                     events.append(f"Emergency injected: {result}")
+                    trigger_optimization = True
 
                 if self.congestion_inject_step and step == self.congestion_inject_step:
                     result = adapter.inject_congestion_event(
@@ -142,17 +145,28 @@ class SimulationOrchestrator:
                         speed_reduction_factor=self.congestion_reduction,
                     )
                     events.append(f"Congestion: {result}")
+                    trigger_optimization = True
 
                 if self.congestion_clear_step and step == self.congestion_clear_step:
                     result = adapter.clear_congestion_event(self.congestion_edge)
                     events.append(f"Congestion cleared: {result}")
+                    trigger_optimization = True
 
                 # --- Advance SUMO Simulation ---
                 adapter.step(seconds=1)
 
-                # --- Periodic Optimization ---
+                # Check if emergency vehicle completed its route
+                if self.emergency_inject_step and step > self.emergency_inject_step:
+                    veh_id = f"emergency_{self.controller_name}"
+                    if veh_id in adapter.emergency_travel_times:
+                        cleared_msg = f"Emergency corridor cleared: {veh_id}"
+                        if cleared_msg not in [e for m in step_metrics_list for e in m.events]:
+                            events.append(cleared_msg)
+                            trigger_optimization = True
+
+                # --- Adaptive / Periodic / Event-driven Optimization ---
                 decisions_dict: Dict[str, Dict[str, Any]] = {}
-                if step % self.optimization_interval == 0:
+                if trigger_optimization:
                     network_state = adapter.extract_network_state()
                     decisions = self.controller.get_decisions(network_state)
                     adapter.apply_signal_decisions(decisions)
