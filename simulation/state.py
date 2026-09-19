@@ -3,9 +3,11 @@ from traffic import get_traffic_density
 from signals import get_signal_states
 
 
-def get_traffic_state():
+def get_traffic_state(metrics=None):
 
-    metrics = get_traffic_metrics()
+    if metrics is None:
+        metrics = get_traffic_metrics()
+
     density = get_traffic_density()
     signals = get_signal_states()
 
@@ -13,6 +15,7 @@ def get_traffic_state():
         "vehicle_count": metrics["vehicle_count"],
         "waiting_time": metrics["total_waiting_time"],
         "queue_lengths": metrics["queue_lengths"],
+        "throughput": metrics["throughput"],
         "density": density,
         "signals": signals,
         "fuel_consumption": metrics["fuel_consumption"],
