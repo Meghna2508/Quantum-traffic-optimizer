@@ -1,7 +1,7 @@
 import traci
 
 from metrics import get_traffic_metrics
-from signals import get_signal_states
+from signals import get_signal_states, set_signal_phase, set_signal_duration
 from traffic import get_traffic_density
 from state import get_traffic_state
 
@@ -15,6 +15,15 @@ traci.start([
 for step in range(100):
 
     traci.simulationStep()
+
+    # Test dynamic signal control
+    if step == 20:
+        for intersection in [
+            "I1", "I2", "I3", "I4",
+            "I5", "I6", "I7", "I8"
+        ]:
+            set_signal_phase(intersection, 0)
+            set_signal_duration(intersection, 30)
 
     metrics = get_traffic_metrics()
     signals = get_signal_states()
@@ -40,4 +49,6 @@ for step in range(100):
 
     print("Traffic State:")
     print(state)
+
+
 traci.close()
