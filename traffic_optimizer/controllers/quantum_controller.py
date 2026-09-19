@@ -41,6 +41,8 @@ class QuantumOptimizerController(BaseSignalController):
     ) -> Dict[str, SignalDecision]:
         """
         Computes signal decisions for all intersections using QAOA.
+        Partitions large networks into groups of at most 3 intersections (<= 18 qubits)
+        to prevent feasibility collapse and statevector simulation memory limits.
 
         Args:
             state: NetworkTrafficState snapshot.
@@ -48,15 +50,32 @@ class QuantumOptimizerController(BaseSignalController):
         Returns:
             Dict[str, SignalDecision]: Intersection decisions.
         """
-        # 1. Build QUBO matrix from current traffic state
-        qubo_problem = self.qubo_builder.build_qubo(state)
+        intersection_ids = sorted(list(state.intersections.keys()))
+        if not intersection_ids:
+            return {}
 
-        # 2. Execute QAOA solver on Qiskit Aer
-        self.last_result = self.solver.solve(qubo_problem)
+        # Chunk into groups of at most 3 intersections (<= 18 qubits)
+        chunk_size = 3
+        groups = [
+            intersection_ids[i : i + chunk_size]
+            for i in range(0, len(intersection_ids), chunk_size)
+        ]
 
-        # 3. Decode best feasible bitstring into SignalDecision objects
-        decisions = TrafficQUBODecoder.decode(
-            self.last_result.selected_bitstring, qubo_problem
-        )
+        all_decisions: Dict[str, SignalDecision] = {}
+        for group in groups:
+            # 1. Build QUBO matrix for the current group
+            qubo_problem = self.qubo_builder.build_qubo(
+                state, target_intersection_ids=group
+            )
 
-        return decisions
+            # 2. Execute QAOA solver on Qiskit Aer
+            res = self.solver.solve(qubo_problem)
+            self.last_result = res
+
+            # 3. Decode best feasible bitstring into SignalDecision objects
+            group_decisions = TrafficQUBODecoder.decode(
+                res.selected_bitstring, qubo_problem
+            )
+            all_decisions.update(group_decisions)
+
+        return all_decisions

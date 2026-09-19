@@ -1,7 +1,7 @@
 """QUBO builder, QUBO matrix representation, and bitstring decoder for traffic signal optimization."""
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Tuple, Any, Union
+from typing import Dict, List, Tuple, Any, Union, Optional
 import numpy as np
 
 from traffic_optimizer.config import (
@@ -97,12 +97,17 @@ class TrafficQUBOBuilder:
         self.config = config
         self.cost_model = cost_model or TrafficCostModel(config=config)
 
-    def build_qubo(self, network_state: NetworkTrafficState) -> QUBOProblem:
+    def build_qubo(
+        self,
+        network_state: NetworkTrafficState,
+        target_intersection_ids: Optional[List[str]] = None,
+    ) -> QUBOProblem:
         """
         Constructs the complete QUBO matrix and variable mappings.
 
         Args:
             network_state: NetworkTrafficState immutable state snapshot.
+            target_intersection_ids: Optional subset of intersection IDs to optimize.
 
         Returns:
             QUBOProblem instance.
@@ -112,7 +117,10 @@ class TrafficQUBOBuilder:
             for dur in ALLOWED_GREEN_DURATIONS:
                 candidate_configs.append((phase, dur))
 
-        intersection_ids = sorted(list(network_state.intersections.keys()))
+        if target_intersection_ids is not None:
+            intersection_ids = sorted([iid for iid in target_intersection_ids if iid in network_state.intersections])
+        else:
+            intersection_ids = sorted(list(network_state.intersections.keys()))
         var_names: List[str] = []
         var_map: Dict[str, int] = {}
         index_to_var: Dict[int, str] = {}

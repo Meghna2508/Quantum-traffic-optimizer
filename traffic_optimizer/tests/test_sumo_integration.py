@@ -76,9 +76,9 @@ def test_sumo_extract_network_state(adapter):
 
     state = adapter.extract_network_state()
     assert isinstance(state, NetworkTrafficState)
-    assert len(state.intersections) == 8
+    assert len(state.intersections) == 4
     assert "I1" in state.intersections
-    assert "I8" in state.intersections
+    assert "I4" in state.intersections
 
     snap = state.intersections["I1"]
     assert "N" in snap.queue_lengths
@@ -124,7 +124,7 @@ def test_sumo_congestion_injection_and_clear(adapter):
     adapter.start_simulation()
     adapter.step(seconds=2)
 
-    edge_id = "I2_I3"
+    edge_id = "I1_I2"
     res_inject = adapter.inject_congestion_event(edge_id=edge_id, speed_reduction_factor=0.3)
     assert "injected" in res_inject.lower()
     assert edge_id in adapter.active_congestion_events
@@ -276,7 +276,7 @@ def test_orchestrator_emergency_and_congestion_combined():
         emergency_inject_step=15,
         congestion_inject_step=20,
         congestion_clear_step=45,
-        congestion_edge="I2_I3",
+        congestion_edge="I1_I2",
     )
 
     result = orchestrator.run()

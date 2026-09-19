@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <configuration>
-
     <input>
         <net-file value="network.net.xml"/>
         <route-files value="routes.rou.xml"/>
     </input>
-
     <time>
         <begin value="0"/>
-        <end value="1000"/>
+        <end value="2000"/>
     </time>
-
+    <gui_only>
+        <gui-settings-file value="gui-settings.cfg.xml"/>
+        <start value="true"/>
+    </gui_only>
 </configuration>

@@ -62,10 +62,8 @@ class FixedCycleController(BaseSignalController):
         self._call_count += 1
         return {
             iid: SignalDecision(
-                intersection_id=iid,
                 phase=phase,
                 duration=30,
-                
             )
             for iid in state.intersections
         }
