@@ -123,6 +123,36 @@ def test_duration_sensitivity():
     assert cost_90s < cost_30s
 
 
+def test_emissions_proxy_penalizes_idle_and_stop_and_go():
+    config = QUBOConfig(
+        lambda_penalty=0.0,
+        w_queue=0.0,
+        w_wait=0.0,
+        w_congestion=0.0,
+        w_throughput=0.0,
+        w_downstream=0.0,
+        w_switch=0.0,
+        w_emissions=10.0,
+    )
+    builder = TrafficQUBOBuilder(config=config)
+    snapshot = IntersectionStateSnapshot(
+        intersection_id="I1",
+        queue_lengths={"N": 30, "S": 30, "E": 30, "W": 30},
+        densities={"N": 0.10, "S": 0.10, "E": 0.80, "W": 0.80},
+        capacities={"N": 100, "S": 100, "E": 100, "W": 100},
+        current_phase="NS",
+        current_green_duration=30,
+        emergency_status={"N": False, "S": False, "E": False, "W": False},
+    )
+    state = NetworkTrafficState(timestamp=0.0, intersections={"I1": snapshot})
+    qubo = builder.build_qubo(state)
+
+    # NS leaves the high-density EW approaches idling on red; EW serves them.
+    cost_ns = qubo.evaluate_cost("100000")
+    cost_ew = qubo.evaluate_cost("000100")
+    assert cost_ns > cost_ew
+
+
 def test_emergency_sensitivity():
     config = QUBOConfig(lambda_penalty=0.0, w_emergency=500.0)
     builder = TrafficQUBOBuilder(config=config)

@@ -352,7 +352,7 @@ with tab_comparison:
                 margin=dict(l=40, r=20, t=50, b=40),
                 legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
             )
-            st.plotly_chart(fig_queue, width='stretch')
+            st.plotly_chart(fig_queue, use_container_width=True)
 
         with fig_cols[1]:
             fig_wait = go.Figure()
@@ -376,7 +376,7 @@ with tab_comparison:
                 margin=dict(l=40, r=20, t=50, b=40),
                 legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
             )
-            st.plotly_chart(fig_wait, width='stretch')
+            st.plotly_chart(fig_wait, use_container_width=True)
 
 
 # =============================================================================
@@ -560,18 +560,20 @@ with tab_qaoa:
                 "Queue (unserved green)",
                 "Wait (red delay)",
                 "Congestion (red density)",
+                "Emissions (idle / stop-go proxy)",
                 "Throughput Reward",
                 "Stability Penalty",
                 "Downstream Penalty",
                 "Emergency Override",
                 "Constraint Penalty (lambda)",
             ],
-            "Weight": ["10.0", "8.0", "5.0", "-12.0 (reward)", "1.5", "8.0", "500.0", "1000.0"],
-            "Range":  ["[0, 1]", "[0, 2]", "[0, 1]", "[-1, 0]", "{0, 1.5}", "[0, inf)", "large +/-", "0 or lambda"],
+            "Weight": ["10.0", "8.0", "8.0", "5.0", "-12.0 (reward)", "1.5", "12.0", "500.0", "1000.0"],
+            "Range":  ["[0, 1]", "[0, 2]", "[0, 1]", "[0, 1]", "[-1, 0]", "{0, 1.5}", "[0, inf)", "large +/-", "0 or lambda"],
             "Role": [
                 "Penalize residual unserved queue after green phase",
                 "Penalize cumulative delay on red approaches",
                 "Penalize high-density red-approach saturation",
+                "Penalize red-side idling and residual stop-and-go traffic",
                 "Reward discharge of vehicles (negative cost)",
                 "Discourage phase oscillation between cycles",
                 "Penalize pushing traffic into saturated downstream",
@@ -579,7 +581,7 @@ with tab_qaoa:
                 "Enforce exactly-one config per intersection",
             ],
         }
-        st.dataframe(pd.DataFrame(cost_data), width='stretch', hide_index=True)
+        st.dataframe(pd.DataFrame(cost_data), use_container_width=True, hide_index=True)
 
         is_fallback = qd.get("is_fallback", False)
         if is_fallback:
@@ -640,7 +642,7 @@ with tab_network:
         height=400,
         margin=dict(l=40, r=40, t=50, b=40),
     )
-    st.plotly_chart(fig_grid, width='stretch')
+    st.plotly_chart(fig_grid, use_container_width=True)
 
     st.markdown("#### Approach Directions & Signal Assignment")
     st.dataframe(
@@ -650,7 +652,7 @@ with tab_network:
             {"Intersection": "I3", "North": "Queue: 5 | Cap: 50", "South": "Queue: 4 | Cap: 50", "East": "Queue: 0 | Cap: 50", "West": "Queue: 1 | Cap: 50", "Active Phase": "NS Green (60s)"},
             {"Intersection": "I4", "North": "Queue: 1 | Cap: 50", "South": "Queue: 0 | Cap: 50", "East": "Queue: 3 | Cap: 50", "West": "Queue: 0 | Cap: 50", "Active Phase": "EW Green (30s)"},
         ]),
-        width='stretch',
+        use_container_width=True,
     )
 
 
@@ -754,7 +756,7 @@ with tab_benchmark:
                 margin=dict(l=40, r=20, t=60, b=40),
                 height=420,
             )
-            st.plotly_chart(fig_bench, width='stretch')
+            st.plotly_chart(fig_bench, use_container_width=True)
 
             # --- Summary table ---
             st.markdown("#### Detailed Averages (all seeds)")
@@ -770,7 +772,7 @@ with tab_benchmark:
             st.dataframe(
                 display_df[["Scenario", "Controller", "Avg Wait (s)", "Avg Queue",
                              "Throughput", "CO2 (kg)", "Wall (s)"]].round(3),
-                width='stretch',
+                use_container_width=True,
                 hide_index=True,
             )
 

@@ -36,19 +36,21 @@ class QUBOConfig:
         lambda_penalty: Penalty weight enforcing exactly-one configuration per junction (dimensionless). Default: 1000.0.
         w_queue: Weight for normalized remaining unserved queue on green approaches (dimensionless, [0, 1]). Default: 10.0.
         w_wait: Weight for normalized waiting delay on red approaches (dimensionless, [0, 2]). Default: 8.0.
-        w_congestion: Weight for normalized approach saturation ratio (dimensionless, [0, 1]). Default: 5.0.
+        w_congestion: Weight for normalized approach saturation ratio (dimensionless, [0, 1]). Default: 8.0.
         w_throughput: Reward weight for normalized vehicle discharge throughput (dimensionless, [0, 1], subtracted). Default: 12.0.
         w_emergency: Overwhelming priority weight for emergency vehicle clearance (dimensionless). Default: 500.0.
-        w_downstream: Penalty weight for discharging traffic toward congested downstream approaches (dimensionless). Default: 8.0.
+        w_downstream: Penalty weight for discharging traffic toward congested downstream approaches (dimensionless). Default: 12.0.
         w_switch: Penalty weight for toggling signal phase away from current active phase (dimensionless). Default: 4.0.
+        w_emissions: Weight for the normalized idling and stop-and-go emissions proxy (dimensionless). Default: 5.0.
     """
     lambda_penalty: float = 1000.0
     w_queue: float = 10.0
     w_wait: float = 8.0
-    w_congestion: float = 5.0
+    w_congestion: float = 8.0
     w_throughput: float = 12.0
     w_emergency: float = 500.0
-    w_downstream: float = 8.0
+    w_downstream: float = 12.0
     w_switch: float = 1.5
+    w_emissions: float = 5.0
 
 

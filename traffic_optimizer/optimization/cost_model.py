@@ -1,4 +1,4 @@
-"""Cost model evaluating normalized multi-objective components (queue, delay, throughput, congestion, downstream, stability, emergency)."""
+"""Cost model evaluating normalized traffic, emissions, and safety objectives."""
 
 from typing import Dict, Tuple, List, Optional
 from traffic_optimizer.config import QUBOConfig, DEFAULT_DISCHARGE_RATE
@@ -26,13 +26,15 @@ class TrafficCostModel:
     1. Dimensionless Normalization:
        All primary metrics (queues, delay, congestion, throughput, downstream utilization)
        are scaled into canonical ranges [0, 1] or [0, 2] before linear combination.
-    2. Throughput as Reward:
+     4. Emissions Proxy:
+         Penalizes red-side idling and residual green-side queues that create stop-and-go traffic.
+     5. Throughput as Reward:
        Serving vehicles is modeled as a negative cost (reward) proportional to throughput.
-    3. Signal Stability (Phase-Switching Penalty):
+     6. Signal Stability (Phase-Switching Penalty):
        Discourages high-frequency toggling between NS and EW across consecutive cycles.
-    4. Network-Aware Downstream Penalty:
+     7. Network-Aware Downstream Penalty:
        Penalizes pushing traffic into saturated downstream corridors.
-    5. Emergency Override:
+     8. Emergency Override:
        Provides strict dominance for clearing emergency vehicles.
     """
 
@@ -91,7 +93,18 @@ class TrafficCostModel:
         normalized_congestion = min(1.0, red_density * (duration / 90.0))
         cost_congestion = self.config.w_congestion * normalized_congestion
 
-        # 4. Throughput Reward (Negative cost, normalized by max possible 90s discharge)
+        # 4. Emissions Proxy: red-side idling plus residual green-side stop-and-go.
+        normalized_red_idle = min(1.0, red_queue / max(1.0, float(red_cap)))
+        normalized_residual_queue = min(1.0, remaining_green_queue / max(1.0, float(green_cap)))
+        normalized_emissions = min(
+            1.0,
+            0.65 * normalized_red_idle
+            + 0.35 * normalized_residual_queue
+            + 0.25 * red_density,
+        )
+        cost_emissions = self.config.w_emissions * normalized_emissions
+
+        # 5. Throughput Reward (Negative cost, normalized by max possible 90s discharge)
         max_possible_discharge = self.discharge_rate * 90.0
         normalized_throughput = min(1.0, discharged / max(1.0, max_possible_discharge))
         reward_throughput = -self.config.w_throughput * normalized_throughput
@@ -121,6 +134,7 @@ class TrafficCostModel:
             cost_queue
             + cost_wait
             + cost_congestion
+            + cost_emissions
             + reward_throughput
             + cost_switch
             + cost_downstream

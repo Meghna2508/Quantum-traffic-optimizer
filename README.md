@@ -109,6 +109,28 @@ python run_hackathon_demo.py
 
 ---
 
+## Problem and Recent Improvements
+
+The dashboard initially failed with `TypeError: 'str' object cannot be interpreted as an integer` because the installed Streamlit version did not accept `width="stretch"` for charts and dataframes. The dashboard now uses `use_container_width=True` for compatibility.
+
+The original QUBO objective optimized queue length, waiting time, congestion, throughput, stability, downstream traffic, and emergency priority, but it did not explicitly account for emissions. This allowed the quantum controller to reduce queues while sometimes producing higher fuel consumption and CO2 than the classical controller.
+
+The current implementation adds an emissions proxy to the QUBO cost model. It penalizes red-side idling, residual green-side queues, and traffic density. The configurable weights are:
+
+- Congestion penalty: `8.0`
+- Downstream penalty: `12.0`
+- Emissions proxy penalty: `5.0`
+
+The emissions proxy is a planning signal used by the optimizer; SUMO remains the source of measured fuel and CO2 results. The current tests validate the new objective and its behavior, but the weights still require calibration across multiple traffic scenarios to guarantee lower measured CO2 without sacrificing throughput or waiting time.
+
+Validation completed on the `quantum-optimization` branch:
+
+- 30 non-SUMO tests passed
+- 11 SUMO integration tests passed
+- Dashboard syntax and staged-diff checks passed
+
+---
+
 ## 📊 Benchmark Results
 
 | Metric | Classical Rule-Based | QAOA Quantum Optimization | Relative Improvement |
