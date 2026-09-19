@@ -8,6 +8,7 @@ A quantum-enhanced adaptive urban traffic signal optimization system utilizing Q
 
 1. **Microscopic Traffic Simulation with SUMO**:
    - Realistic 2x2 multi-intersection urban grid with bidirectional multilane arterials.
+   - The bundled SUMO network contains four signalized intersections (`I1`-`I4`).
    - TraCI integration (`SUMOAdapter` & `SimulationOrchestrator`) with automated fallback simulator for headless testing.
    - Real-time vehicle tracking, waiting times, queue lengths, and throughput calculation.
 
@@ -20,7 +21,7 @@ A quantum-enhanced adaptive urban traffic signal optimization system utilizing Q
 
 3. **QAOA Quantum Optimization Engine**:
    - Parameterized quantum circuits evaluated on Qiskit Aer Statevector and QASM simulators with COBYLA classical optimization.
-   - Optimal phase and green duration selection ($15\text{s}, 30\text{s}, 45\text{s}$) across all network intersections.
+   - Optimal phase and green duration selection (`30`, `60`, or `90` seconds) across the configured intersections.
    - Probability distribution visualization and bitstring convergence tracking.
 
 4. **Dual Controller Benchmarking**:
@@ -73,7 +74,7 @@ A quantum-enhanced adaptive urban traffic signal optimization system utilizing Q
     │   └── result.py                   # QAOA execution result dataclass
     ├── simulation/
     │   └── traffic_simulator.py        # Internal traffic simulation engine
-    └── tests/                          # Comprehensive pytest test suite (38 tests)
+   └── tests/                          # Comprehensive pytest test suite
 ```
 
 ---
@@ -90,11 +91,17 @@ git checkout quantum-optimization
 pip install -r requirements.txt  # or install qiskit qiskit-aer streamlit traci pytest
 ```
 
+Install Eclipse SUMO separately and add its `bin` directory to `PATH`. On Windows, SUMO can be installed with:
+
+```powershell
+winget install --id EclipseFoundation.SUMO --exact
+```
+
 ### 2. Run Tests
 ```bash
 pytest
 ```
-All 38 unit and integration tests validate network state snapshots, QUBO generation, Ising mapping, QAOA convergence, and SUMO TraCI adapters.
+The test suite validates network state snapshots, QUBO generation, Ising mapping, QAOA convergence, emissions scoring, and SUMO TraCI adapters.
 
 ### 3. Launch Dashboard
 ```bash
@@ -122,6 +129,8 @@ The current implementation adds an emissions proxy to the QUBO cost model. It pe
 - Emissions proxy penalty: `5.0`
 
 The emissions proxy is a planning signal used by the optimizer; SUMO remains the source of measured fuel and CO2 results. The current tests validate the new objective and its behavior, but the weights still require calibration across multiple traffic scenarios to guarantee lower measured CO2 without sacrificing throughput or waiting time.
+
+The network factory can scale beyond the bundled SUMO model. An 8x8 abstract network test produced 64 intersections, 224 roads, and 384 QUBO variables in 0.043 seconds. Running the hackathon demo with eight SUMO-controlled intersections is not currently supported because the bundled SUMO files define only `I1`-`I4`; the SUMO network files must be expanded before using `I5`-`I8` with `run_hackathon_demo.py`.
 
 Validation completed on the `quantum-optimization` branch:
 
