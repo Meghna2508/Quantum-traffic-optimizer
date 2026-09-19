@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+    <!-- Vehicle types -->
+    <vType id="car"
+           accel="2.6"
+           decel="4.5"
+           sigma="0.5"
+           length="5"
+           minGap="2.5"
+           maxSpeed="13.89"
+           color="1,1,1"/>
+
+
+    <!-- Routes -->
+    <route id="R1" edges="I1_I2 I2_I3 I3_I4"/>
+    <route id="R2" edges="I4_I3 I3_I2 I2_I1"/>
+
+    <route id="R3" edges="I5_I6 I6_I7 I7_I8"/>
+    <route id="R4" edges="I8_I7 I7_I6 I6_I5"/>
+
+    <route id="R5" edges="I1_I5 I5_I6 I6_I7"/>
+    <route id="R6" edges="I7_I6 I6_I5 I5_I1"/>
+
+    <route id="R7" edges="I4_I8 I8_I7 I7_I6"/>
+    <route id="R8" edges="I6_I7 I7_I8 I8_I4"/>
+
+
+    <!-- Vehicles -->
+    <flow id="flow1" type="car" route="R1"
+          begin="0" end="1000" vehsPerHour="300"/>
+
+    <flow id="flow2" type="car" route="R2"
+          begin="0" end="1000" vehsPerHour="250"/>
+
+    <flow id="flow3" type="car" route="R3"
+          begin="0" end="1000" vehsPerHour="350"/>
+
+    <flow id="flow4" type="car" route="R4"
+          begin="0" end="1000" vehsPerHour="300"/>
+
+    <flow id="flow5" type="car" route="R5"
+          begin="0" end="1000" vehsPerHour="200"/>
+
+    <flow id="flow6" type="car" route="R6"
+          begin="0" end="1000" vehsPerHour="200"/>
+
+    <flow id="flow7" type="car" route="R7"
+          begin="0" end="1000" vehsPerHour="250"/>
+
+    <flow id="flow8" type="car" route="R8"
+          begin="0" end="1000" vehsPerHour="250"/>
+
+</routes>
