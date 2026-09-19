@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <nodes>
+
     <node id="I1" x="0" y="200" type="traffic_light"/>
-    <node id="I2" x="200" y="200" type="traffic_light"/>
-    <node id="I3" x="400" y="200" type="traffic_light"/>
-    <node id="I4" x="600" y="200" type="traffic_light"/>
+    <node id="I2" x="100" y="200" type="traffic_light"/>
+    <node id="I3" x="200" y="200" type="traffic_light"/>
+    <node id="I4" x="300" y="200" type="traffic_light"/>
+
     <node id="I5" x="0" y="0" type="traffic_light"/>
-    <node id="I6" x="200" y="0" type="traffic_light"/>
-    <node id="I7" x="400" y="0" type="traffic_light"/>
-    <node id="I8" x="600" y="0" type="traffic_light"/>
+    <node id="I6" x="100" y="0" type="traffic_light"/>
+    <node id="I7" x="200" y="0" type="traffic_light"/>
+    <node id="I8" x="300" y="0" type="traffic_light"/>
+
 </nodes>

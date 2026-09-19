@@ -10,6 +10,11 @@ INTERSECTIONS = [
 cumulative_throughput = 0
 
 
+def reset_metrics():
+    global cumulative_throughput
+    cumulative_throughput = 0
+
+
 def get_traffic_metrics():
 
     global cumulative_throughput
@@ -36,25 +41,35 @@ def get_traffic_metrics():
             vehicle_id
         )
 
+
     queue_lengths = {}
+
 
     for intersection in INTERSECTIONS:
 
         try:
-            controlled_lanes = traci.trafficlight.getControlledLanes(
-                intersection
+
+            controlled_lanes = (
+                traci.trafficlight.getControlledLanes(
+                    intersection
+                )
             )
+
         except traci.TraCIException:
+
             queue_lengths[intersection] = 0
             continue
 
+
         queue = 0
+
 
         for lane in set(controlled_lanes):
 
-            vehicle_ids = traci.lane.getLastStepVehicleIDs(
-                lane
+            vehicle_ids = (
+                traci.lane.getLastStepVehicleIDs(lane)
             )
+
 
             for vehicle_id in vehicle_ids:
 
@@ -63,19 +78,37 @@ def get_traffic_metrics():
                 )
 
                 if speed < 0.5:
+
                     queue += 1
+
 
         queue_lengths[intersection] = queue
 
-    arrived_this_step = traci.simulation.getArrivedNumber()
+
+    arrived_this_step = (
+        traci.simulation.getArrivedNumber()
+    )
 
     cumulative_throughput += arrived_this_step
 
+
     return {
+
         "vehicle_count": vehicle_count,
-        "total_waiting_time": total_waiting_time,
-        "queue_lengths": queue_lengths,
-        "throughput": cumulative_throughput,
-        "fuel_consumption": total_fuel,
-        "co2_emission": total_co2
+
+        "total_waiting_time":
+            total_waiting_time,
+
+        "queue_lengths":
+            queue_lengths,
+
+        "throughput":
+            cumulative_throughput,
+
+        "fuel_consumption":
+            total_fuel,
+
+        "co2_emission":
+            total_co2
+
     }

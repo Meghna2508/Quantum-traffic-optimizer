@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional>
+
+    <!-- I1 -->
+    <tlLogic id="I1" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="GGrr"/>
+        <phase duration="3" state="yyrr"/>
+        <phase duration="30" state="rrGG"/>
+        <phase duration="3" state="rryy"/>
+    </tlLogic>
+
+    <!-- I2 -->
+    <tlLogic id="I2" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="GGggrrrrGGGg"/>
+        <phase duration="3" state="yyyyrrrrGyyy"/>
+        <phase duration="30" state="rrrrGGGgGrrr"/>
+        <phase duration="3" state="rrrryyyyGrrr"/>
+    </tlLogic>
+
+    <!-- I3 -->
+    <tlLogic id="I3" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="GGggrrrrGGGg"/>
+        <phase duration="3" state="yyyyrrrrGyyy"/>
+        <phase duration="30" state="rrrrGGGgGrrr"/>
+        <phase duration="3" state="rrrryyyyGrrr"/>
+    </tlLogic>
+
+    <!-- I4 -->
+    <tlLogic id="I4" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="GGrr"/>
+        <phase duration="3" state="yyrr"/>
+        <phase duration="30" state="rrGG"/>
+        <phase duration="3" state="rryy"/>
+    </tlLogic>
+
+    <!-- I5 -->
+    <tlLogic id="I5" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="GGrr"/>
+        <phase duration="3" state="yyrr"/>
+        <phase duration="30" state="rrGG"/>
+        <phase duration="3" state="rryy"/>
+    </tlLogic>
+
+    <!-- I6 -->
+    <tlLogic id="I6" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="rrrrGGGgGGgg"/>
+        <phase duration="3" state="rrrrGyyyyyyy"/>
+        <phase duration="30" state="GGGgGrrrrrrr"/>
+        <phase duration="3" state="yyyyGrrrrrrr"/>
+    </tlLogic>
+
+    <!-- I7 -->
+    <tlLogic id="I7" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="rrrrGGGgGGgg"/>
+        <phase duration="3" state="rrrrGyyyyyyy"/>
+        <phase duration="30" state="GGGgGrrrrrrr"/>
+        <phase duration="3" state="yyyyGrrrrrrr"/>
+    </tlLogic>
+
+    <!-- I8 -->
+    <tlLogic id="I8" type="static" programID="adaptive" offset="0">
+        <phase duration="30" state="GGrr"/>
+        <phase duration="3" state="yyrr"/>
+        <phase duration="30" state="rrGG"/>
+        <phase duration="3" state="rryy"/>
+    </tlLogic>
+
+</additional>

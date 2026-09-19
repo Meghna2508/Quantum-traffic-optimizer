@@ -1,0 +1,37 @@
+{
+    "classical": {
+        "mode": "classical",
+        "simulation_steps": 200,
+        "average_waiting_time": 0.0,
+        "average_queue": 0.0,
+        "throughput": 105,
+        "average_fuel_litres": 0.013831695386542145,
+        "average_co2_kg": 0.03178592523925417,
+        "average_fuel_raw": 10304.613062973898,
+        "average_co2_raw": 31785.92523925417,
+        "optimization_runs": 0,
+        "average_optimization_time": 0,
+        "last_bitstring": ""
+    },
+    "qaoa": {
+        "mode": "quantum",
+        "simulation_steps": 200,
+        "average_waiting_time": 0.0,
+        "average_queue": 0.0,
+        "throughput": 105,
+        "average_fuel_litres": 0.013831695386542145,
+        "average_co2_kg": 0.03178592523925417,
+        "average_fuel_raw": 10304.613062973898,
+        "average_co2_raw": 31785.92523925417,
+        "optimization_runs": 10,
+        "average_optimization_time": 0.024329447746276857,
+        "last_bitstring": "11111111"
+    },
+    "change_percent": {
+        "waiting_time": 0,
+        "queue": 0,
+        "throughput": 0.0,
+        "fuel": 0.0,
+        "co2": 0.0
+    }
+}
