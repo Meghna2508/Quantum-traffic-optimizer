@@ -87,27 +87,27 @@ SCENARIOS: Dict[str, ScenarioConfig] = {
     "Normal": ScenarioConfig(
         name="Normal", label="A. Normal",
         emergency_step=None,
-        congestion_inject_step=None, congestion_clear_step=None, congestion_edge="I2_I3",
+        congestion_inject_step=None, congestion_clear_step=None, congestion_edge="I1_I2",
     ),
     "Congestion": ScenarioConfig(
         name="Congestion", label="B. Congestion",
         emergency_step=None,
-        congestion_inject_step=20, congestion_clear_step=180, congestion_edge="I2_I3",
+        congestion_inject_step=20, congestion_clear_step=180, congestion_edge="I1_I2",
     ),
     "Emergency": ScenarioConfig(
         name="Emergency", label="C. Emergency",
         emergency_step=35,
-        congestion_inject_step=None, congestion_clear_step=None, congestion_edge="I2_I3",
+        congestion_inject_step=None, congestion_clear_step=None, congestion_edge="I1_I2",
     ),
     "Bottleneck": ScenarioConfig(
         name="Bottleneck", label="D. Bottleneck",
         emergency_step=None,
-        congestion_inject_step=15, congestion_clear_step=185, congestion_edge="I2_I3",
+        congestion_inject_step=15, congestion_clear_step=185, congestion_edge="I1_I2",
     ),
     "Incident": ScenarioConfig(
         name="Incident", label="E. Incident",
         emergency_step=None,
-        congestion_inject_step=60, congestion_clear_step=120, congestion_edge="I2_I3",
+        congestion_inject_step=60, congestion_clear_step=120, congestion_edge="I1_I2",
     ),
 }
 
