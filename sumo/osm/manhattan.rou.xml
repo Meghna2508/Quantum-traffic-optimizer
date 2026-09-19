@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="car" accel="2.8" decel="4.5" sigma="0.5" length="5.0"
+           minGap="2.5" maxSpeed="13.89" guiShape="passenger" color="0.2,0.6,1.0"/>
+    <vType id="truck" accel="2.0" decel="3.5" sigma="0.5" length="7.5"
+           minGap="3.0" maxSpeed="11.11" guiShape="truck" color="0.9,0.6,0.1"/>
+    <vType id="emergency" accel="3.5" decel="5.0" sigma="0.2" length="6.5"
+           minGap="2.0" maxSpeed="22.22" speedFactor="1.5" guiShape="emergency"
+           color="1.0,0.0,0.0" vClass="emergency"/>
+
+    <route id="R_emergency" edges="-1088325195#2 1088325195#0 420904658#0 542096279#0 1201643837#0 458166894#0 1530333338#0 1530333337#0 226041001#0 1150636501#0 438385431#6 438385431#9"/>
+    <route id="R1" edges="-1088325195#2 1088325195#0 989793293#0 989793295#0"/>
+    <route id="R2" edges="1088325196#0 5670600#0 -5670600#1 -1088325196#1 -420904659#1 -5671315#1 -420904658#3 989793293#0 68674961#0 68674961#4"/>
+    <route id="R3" edges="1530333338#0 1530333337#0 226041001#0 1150636501#0 438385431#6 438385431#9 420496529#0 458166892#0 458166892#3 1088325196#0 5670600#0"/>
+    <route id="R4" edges="226041001#0 1150636501#0 438385431#6 438385431#9 420496529#0 458166892#0 458166892#3 -420904659#1 -5671315#1 -420904658#3 68674965#0 46520833#0"/>
+    <route id="R5" edges="420904659#0 -420904659#1 -5671315#1 542096279#0 1201643837#0 458166894#0 1530333338#0 1530333337#0 226041001#0 1150636501#0 438385431#6"/>
+    <route id="R8" edges="5673380#0 420904658#0 542096279#0 1201643837#0 458166894#0 1530333338#0 1530333337#0 226041001#0 1150636501#0"/>
+
+    <flow id="flow_R1" type="car" route="R1" begin="0" end="2000" vehsPerHour="280"/>
+    <flow id="flow_R2" type="car" route="R2" begin="0" end="2000" vehsPerHour="240"/>
+    <flow id="flow_R3" type="car" route="R3" begin="0" end="2000" vehsPerHour="220"/>
+    <flow id="flow_R4" type="truck" route="R4" begin="0" end="2000" vehsPerHour="200"/>
+    <flow id="flow_R5" type="car" route="R5" begin="0" end="2000" vehsPerHour="180"/>
+    <flow id="flow_R8" type="car" route="R8" begin="0" end="2000" vehsPerHour="160"/>
+
+    <vehicle id="init_0" type="car" route="R1" depart="0" departSpeed="8" departPos="10"/>
+    <vehicle id="init_1" type="car" route="R2" depart="0" departSpeed="8" departPos="10"/>
+    <vehicle id="init_2" type="car" route="R3" depart="0" departSpeed="8" departPos="10"/>
+    <vehicle id="init_3" type="car" route="R4" depart="0" departSpeed="8" departPos="10"/>
+</routes>

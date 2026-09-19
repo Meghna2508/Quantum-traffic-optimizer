@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="manhattan.net.xml"/>
+        <route-files value="manhattan.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="2000"/>
+    </time>
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+</configuration>

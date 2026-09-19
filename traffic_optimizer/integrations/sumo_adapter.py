@@ -32,6 +32,7 @@ class SUMOAdapter:
         self.use_gui = use_gui
         self.step_length = step_length
         self.is_connected = False
+        self._explicit_intersections = intersections
         self.intersections = (
             intersections
             if intersections is not None
@@ -41,6 +42,10 @@ class SUMOAdapter:
         self.emergency_vehicles_injected: Dict[str, float] = {}
         self.emergency_travel_times: Dict[str, float] = {}
         self.active_congestion_events: Dict[str, float] = {}  # edge_id -> original_max_speed
+        self._saved_tls_programs: Dict[str, str] = {}
+        self._preempted_tls: List[str] = []
+        # Synthetic 2x2 IDs keep the original TraCI phase-index actuation path.
+        self._synthetic_tls_ids = {"I1", "I2", "I3", "I4"}
 
     def start_simulation(self) -> None:
         """Launches SUMO or SUMO-GUI via TraCI."""
@@ -62,6 +67,11 @@ class SUMOAdapter:
 
         traci.start(sumo_cmd)
         self.is_connected = True
+        if self._explicit_intersections is None:
+            discovered = list(traci.trafficlight.getIDList())
+            if discovered:
+                self.intersections = discovered
+        self._snapshot_tls_programs()
 
     def close(self) -> None:
         """Closes TraCI connection."""
@@ -199,21 +209,126 @@ class SUMOAdapter:
 
     def _apply_intersection_decision(self, iid: str, decision: SignalDecision) -> None:
         """Sets phase state for a single junction in SUMO."""
-        phase_idx = 0 if decision.phase == SignalPhase.NORTH_SOUTH else 2
-        try:
-            traci.trafficlight.setPhase(iid, phase_idx)
-            traci.trafficlight.setPhaseDuration(iid, float(decision.duration))
-        except traci.TraCIException:
+        # Preserve the validated 2x2 actuation path (phase index 0 = NS, 2 = EW).
+        if iid in self._synthetic_tls_ids:
+            phase_idx = 0 if decision.phase == SignalPhase.NORTH_SOUTH else 2
             try:
-                curr_state = traci.trafficlight.getRedYellowGreenState(iid)
-                half = max(1, len(curr_state) // 2)
-                if decision.phase == SignalPhase.NORTH_SOUTH:
-                    state_str = "G" * half + "r" * (len(curr_state) - half)
-                else:
-                    state_str = "r" * half + "G" * (len(curr_state) - half)
-                traci.trafficlight.setRedYellowGreenState(iid, state_str)
-            except Exception:
+                traci.trafficlight.setPhase(iid, phase_idx)
+                traci.trafficlight.setPhaseDuration(iid, float(decision.duration))
+                return
+            except traci.TraCIException:
+                try:
+                    curr_state = traci.trafficlight.getRedYellowGreenState(iid)
+                    half = max(1, len(curr_state) // 2)
+                    if decision.phase == SignalPhase.NORTH_SOUTH:
+                        state_str = "G" * half + "r" * (len(curr_state) - half)
+                    else:
+                        state_str = "r" * half + "G" * (len(curr_state) - half)
+                    traci.trafficlight.setRedYellowGreenState(iid, state_str)
+                    return
+                except Exception:
+                    return
+        self._apply_geometric_phase(iid, decision)
+
+    def _apply_geometric_phase(self, iid: str, decision: SignalDecision) -> None:
+        """Map NS/EW decisions onto OSM (or other) TLS using approach geometry."""
+        try:
+            lanes = traci.trafficlight.getControlledLanes(iid)
+            if not lanes:
+                return
+            want_ns = decision.phase == SignalPhase.NORTH_SOUTH
+            chars: List[str] = []
+            for lane in lanes:
+                direction = self._classify_lane_direction(lane, iid)
+                is_ns = direction in ("N", "S")
+                chars.append("G" if is_ns == want_ns else "r")
+            traci.trafficlight.setRedYellowGreenState(iid, "".join(chars))
+            try:
+                traci.trafficlight.setPhaseDuration(iid, float(decision.duration))
+            except traci.TraCIException:
                 pass
+        except Exception:
+            pass
+
+    def _snapshot_tls_programs(self) -> None:
+        """Record the loaded SUMO programs so emergency preemption can restore them."""
+        self._saved_tls_programs = {}
+        try:
+            for tls_id in traci.trafficlight.getIDList():
+                self._saved_tls_programs[tls_id] = traci.trafficlight.getProgram(tls_id)
+        except Exception:
+            self._saved_tls_programs = {}
+
+    def restore_tls_programs(self) -> List[str]:
+        """Restore the original signal programs after corridor preemption."""
+        restored: List[str] = []
+        if not self.is_connected:
+            return restored
+        for tls_id, program in self._saved_tls_programs.items():
+            try:
+                traci.trafficlight.setProgram(tls_id, program)
+                restored.append(tls_id)
+            except Exception:
+                continue
+        self._preempted_tls = []
+        return restored
+
+    def tls_on_route(self, route_edges: List[str]) -> List[str]:
+        """Return traffic-light IDs that control any edge on the given route."""
+        if not self.is_connected:
+            return []
+        route_set = set(route_edges)
+        matched: List[str] = []
+        for tls_id in traci.trafficlight.getIDList():
+            try:
+                lanes = traci.trafficlight.getControlledLanes(tls_id)
+            except traci.TraCIException:
+                continue
+            incoming = {lane.rsplit("_", 1)[0] for lane in lanes}
+            if incoming & route_set:
+                matched.append(tls_id)
+        return matched
+
+    def apply_emergency_corridor(self, vehicle_id: str) -> List[str]:
+        """
+        Preempt only signalized intersections on the emergency vehicle's remaining
+        route. Unrelated traffic lights are left unchanged.
+        """
+        if not self.is_connected:
+            return []
+        try:
+            if vehicle_id not in traci.vehicle.getIDList():
+                return []
+            route_edges = list(traci.vehicle.getRoute(vehicle_id))
+            try:
+                current_idx = traci.vehicle.getRouteIndex(vehicle_id)
+                remaining = set(route_edges[max(0, current_idx) :])
+            except traci.TraCIException:
+                remaining = set(route_edges)
+        except traci.TraCIException:
+            return []
+
+        preempted: List[str] = []
+        for tls_id in traci.trafficlight.getIDList():
+            try:
+                lanes = list(traci.trafficlight.getControlledLanes(tls_id))
+            except traci.TraCIException:
+                continue
+            route_link_indices = [
+                i for i, lane in enumerate(lanes) if lane.rsplit("_", 1)[0] in remaining
+            ]
+            if not route_link_indices:
+                continue
+            state = ["r"] * len(lanes)
+            for i in route_link_indices:
+                state[i] = "G"
+            try:
+                traci.trafficlight.setRedYellowGreenState(tls_id, "".join(state))
+                preempted.append(tls_id)
+            except traci.TraCIException:
+                continue
+        self._preempted_tls = preempted
+        return preempted
 
     def inject_emergency_vehicle(
         self, route_id: str = "R1", vehicle_id: str = "emergency_1"
@@ -370,8 +485,7 @@ class SUMOAdapter:
         for edge_id in list(self.active_congestion_events.keys()):
             self.clear_congestion_event(edge_id)
 
-    @staticmethod
-    def _classify_lane_direction(lane_id: str, iid: str) -> str:
+    def _classify_lane_direction(self, lane_id: str, iid: str) -> str:
         """Determines cardinal approach direction ('N','S','E','W') for a lane leading to iid."""
         edge_id = lane_id.rsplit("_", 1)[0]
         mapping = {
@@ -383,6 +497,10 @@ class SUMOAdapter:
         if iid in mapping and edge_id in mapping[iid]:
             return mapping[iid][edge_id]
 
+        geometric = self._geometric_lane_direction(lane_id)
+        if geometric is not None:
+            return geometric
+
         if "N" in edge_id:
             return "N"
         elif "S" in edge_id:
@@ -392,6 +510,25 @@ class SUMOAdapter:
         elif "W" in edge_id:
             return "W"
         return "N"
+
+    @staticmethod
+    def _geometric_lane_direction(lane_id: str) -> Optional[str]:
+        """Classify an approaching lane from its shape: travel heading implies origin."""
+        try:
+            shape = traci.lane.getShape(lane_id)
+        except Exception:
+            return None
+        if not shape or len(shape) < 2:
+            return None
+        x0, y0 = shape[-2]
+        x1, y1 = shape[-1]
+        dx = x1 - x0
+        dy = y1 - y0
+        if dx == 0 and dy == 0:
+            return None
+        if abs(dy) >= abs(dx):
+            return "S" if dy > 0 else "N"
+        return "W" if dx > 0 else "E"
 
     @staticmethod
     def _parse_sumo_phase_state(state_str: str) -> SignalPhase:

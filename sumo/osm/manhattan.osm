@@ -1,0 +1,2164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.62.11 87bfad18">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2026-09-19T17:42:06Z"/>
+
+  <node id="42428268" lat="40.7528867" lon="-73.9873437" version="16" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="kerb" v="lowered"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="both"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="42430304" lat="40.7498011" lon="-73.9877463" version="10" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42430311" lat="40.7510824" lon="-73.9868280" version="6" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42430317" lat="40.7523170" lon="-73.9859470" version="4" timestamp="2009-12-17T20:34:16Z" changeset="3396277" uid="207745" user="NE2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42432436" lat="40.7528159" lon="-73.9813803" version="11" timestamp="2023-02-24T21:30:01Z" changeset="132985636" uid="17419574" user="Frank Peng">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="42433604" lat="40.7509597" lon="-73.9827265" version="9" timestamp="2023-02-24T21:30:01Z" changeset="132985636" uid="17419574" user="Frank Peng">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="42434946" lat="40.7491045" lon="-73.9840705" version="9" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42434948" lat="40.7484303" lon="-73.9824775" version="5" timestamp="2021-10-05T05:15:32Z" changeset="112103049" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42434951" lat="40.7477174" lon="-73.9807655" version="11" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42434954" lat="40.7470801" lon="-73.9792550" version="6" timestamp="2024-09-18T03:56:36Z" changeset="156753903" uid="2591427" user="snake21"/>
+  <node id="42437644" lat="40.7484537" lon="-73.9845455" version="16" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42443680" lat="40.7471520" lon="-73.9854903" version="7" timestamp="2021-10-06T03:43:17Z" changeset="112147749" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42443950" lat="40.7503415" lon="-73.9831749" version="11" timestamp="2023-02-24T21:30:01Z" changeset="132985636" uid="17419574" user="Frank Peng">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="42445365" lat="40.7477705" lon="-73.9829612" version="7" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42445649" lat="40.7515813" lon="-73.9822757" version="8" timestamp="2023-02-24T21:30:01Z" changeset="132985636" uid="17419574" user="Frank Peng">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="42445651" lat="40.7509069" lon="-73.9806768" version="9" timestamp="2025-08-03T06:12:10Z" changeset="169888951" uid="23152939" user="melinads">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="42445899" lat="40.7464825" lon="-73.9838914" version="7" timestamp="2021-10-06T03:43:17Z" changeset="112147749" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42445903" lat="40.7471011" lon="-73.9834426" version="8" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42445908" lat="40.7490548" lon="-73.9820225" version="9" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42445909" lat="40.7496645" lon="-73.9815704" version="9" timestamp="2025-08-03T06:25:13Z" changeset="169889184" uid="23152939" user="melinads">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="42445910" lat="40.7502832" lon="-73.9811233" version="6" timestamp="2025-08-03T05:02:54Z" changeset="169888001" uid="23152939" user="melinads">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="42445914" lat="40.7515352" lon="-73.9802218" version="8" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42446488" lat="40.7522048" lon="-73.9818235" version="9" timestamp="2023-02-24T21:30:01Z" changeset="132985636" uid="17419574" user="Frank Peng">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="42446701" lat="40.7477740" lon="-73.9850381" version="8" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42449683" lat="40.7489553" lon="-73.9798682" version="9" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="42451674" lat="40.7465313" lon="-73.9859434" version="8" timestamp="2021-10-06T03:55:23Z" changeset="112147977" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="42452973" lat="40.7497277" lon="-73.9836173" version="11" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="42458333" lat="40.7483359" lon="-73.9803186" version="13" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb"/>
+  <node id="561042188" lat="40.7464603" lon="-73.9819120" version="7" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="561042190" lat="40.7471247" lon="-73.9814539" version="9" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="561042191" lat="40.7477980" lon="-73.9809560" version="7" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="561042192" lat="40.7490334" lon="-73.9800510" version="6" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="561042193" lat="40.7484136" lon="-73.9805029" version="8" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb"/>
+  <node id="561042194" lat="40.7496429" lon="-73.9796046" version="5" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="561042195" lat="40.7502720" lon="-73.9791501" version="7" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="561042196" lat="40.7503073" lon="-73.9790027" version="7" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="561042198" lat="40.7509032" lon="-73.9787069" version="9" timestamp="2024-09-18T03:56:36Z" changeset="156753903" uid="2591427" user="snake21"/>
+  <node id="595142429" lat="40.7469645" lon="-73.9814458" version="3" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="3252586224" lat="40.7465343" lon="-73.9838534" version="6" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="3769557279" lat="40.7499050" lon="-73.9840376" version="2" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb"/>
+  <node id="3786901738" lat="40.7463935" lon="-73.9817611" version="9" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+  </node>
+  <node id="3786901740" lat="40.7464455" lon="-73.9817173" version="5" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="3786901743" lat="40.7470461" lon="-73.9812660" version="8" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="3786901746" lat="40.7465422" lon="-73.9818725" version="3" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="3857334397" lat="40.7497588" lon="-73.9876472" version="12" timestamp="2026-08-27T22:53:00Z" changeset="188121656" uid="24288395" user="ankler">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="3997454661" lat="40.7502299" lon="-73.9811620" version="5" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454662" lat="40.7502410" lon="-73.9810285" version="5" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454663" lat="40.7503250" lon="-73.9812245" version="4" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454664" lat="40.7503512" lon="-73.9810754" version="5" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454665" lat="40.7508618" lon="-73.9807116" version="5" timestamp="2025-07-28T08:44:08Z" changeset="169599179" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454666" lat="40.7508730" lon="-73.9805931" version="5" timestamp="2025-07-29T08:29:35Z" changeset="169657376" uid="23065616" user="PedestrianMapping_StealthGrid">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454667" lat="40.7509437" lon="-73.9807675" version="6" timestamp="2025-07-28T08:44:08Z" changeset="169599179" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454668" lat="40.7509604" lon="-73.9806373" version="5" timestamp="2025-07-28T08:44:08Z" changeset="169599179" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="3997454669" lat="40.7514791" lon="-73.9802654" version="11" timestamp="2026-06-12T11:39:54Z" changeset="184012979" uid="33181" user="svona ferðamaður">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="3997454670" lat="40.7515005" lon="-73.9801408" version="11" timestamp="2026-06-12T11:39:52Z" changeset="184012979" uid="33181" user="svona ferðamaður">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="4207937589" lat="40.7479728" lon="-73.9834428" version="5" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21"/>
+  <node id="4207937591" lat="40.7515125" lon="-73.9859694" version="1" timestamp="2016-05-25T21:42:45Z" changeset="39568078" uid="1829683" user="Luis36995"/>
+  <node id="4493840514" lat="40.7475283" lon="-73.9844555" version="5" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon"/>
+  <node id="4625652083" lat="40.7527646" lon="-73.9814175" version="6" timestamp="2023-04-03T14:28:16Z" changeset="134457693" uid="11047726" user="Pyrox">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="4625653591" lat="40.7522691" lon="-73.9817769" version="13" timestamp="2026-06-12T11:39:45Z" changeset="184012979" uid="33181" user="svona ferðamaður">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="4707471833" lat="40.7528183" lon="-73.9871816" version="4" timestamp="2026-06-17T17:30:17Z" changeset="184236719" uid="19857719" user="VLD277">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="yes"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="4711654705" lat="40.7505707" lon="-73.9798773" version="2" timestamp="2022-12-07T01:24:00Z" changeset="129802900" uid="384667" user="MxxCon"/>
+  <node id="4711654714" lat="40.7507456" lon="-73.9802922" version="2" timestamp="2022-12-07T01:24:00Z" changeset="129802900" uid="384667" user="MxxCon"/>
+  <node id="4770624020" lat="40.7496595" lon="-73.9874153" version="8" timestamp="2022-08-23T05:38:16Z" changeset="125252638" uid="384667" user="MxxCon">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="West 34th Street/Broadway"/>
+    <tag k="network" v="NYC Transit"/>
+    <tag k="operator" v="New York City Transit Authority"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="ref" v="401821"/>
+    <tag k="route_ref" v="M34;M34A;X17J;X22;X22A;X31"/>
+  </node>
+  <node id="4886239172" lat="40.7503511" lon="-73.9870355" version="2" timestamp="2020-11-16T22:24:13Z" changeset="94230506" uid="9883637" user="brandonbds"/>
+  <node id="4903169922" lat="40.7496100" lon="-73.9816113" version="10" timestamp="2026-02-15T19:48:32Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="4903169923" lat="40.7497086" lon="-73.9816748" version="11" timestamp="2026-02-15T19:48:37Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="4903169924" lat="40.7497302" lon="-73.9815228" version="10" timestamp="2026-02-15T19:48:33Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="4903169925" lat="40.7496274" lon="-73.9814820" version="11" timestamp="2026-02-15T19:48:35Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="4960503203" lat="40.7469135" lon="-73.9849207" version="5" timestamp="2023-02-26T23:55:32Z" changeset="133063093" uid="384667" user="MxxCon">
+    <tag k="bus" v="yes"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="4960503206" lat="40.7466727" lon="-73.9837557" version="2" timestamp="2021-10-06T03:43:17Z" changeset="112147749" uid="2591427" user="snake21">
+    <tag k="bus" v="yes"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="4960503208" lat="40.7483220" lon="-73.9825529" version="2" timestamp="2026-04-05T01:29:47Z" changeset="180877772" uid="384667" user="MxxCon">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="Madison Avenue &amp; East 34th Street"/>
+    <tag k="network" v="NYC Transit"/>
+    <tag k="operator" v="MTA"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="ref" v="400354"/>
+  </node>
+  <node id="4960516267" lat="40.7501866" lon="-73.9811931" version="1" timestamp="2017-07-09T20:18:10Z" changeset="50160953" uid="1954307" user="daniel_solow">
+    <tag k="bus" v="yes"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="5057315765" lat="40.7479133" lon="-73.9793171" version="5" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb"/>
+  <node id="5846916769" lat="40.7520800" lon="-73.9853845" version="2" timestamp="2022-12-06T18:29:51Z" changeset="129793619" uid="13730365" user="Michael Alvarez"/>
+  <node id="5846916773" lat="40.7513351" lon="-73.9836166" version="1" timestamp="2018-08-21T20:13:02Z" changeset="61868194" uid="6457180" user="promiseofbirth"/>
+  <node id="5846916775" lat="40.7513611" lon="-73.9836784" version="1" timestamp="2018-08-21T20:13:02Z" changeset="61868194" uid="6457180" user="promiseofbirth"/>
+  <node id="5846916776" lat="40.7512092" lon="-73.9833179" version="1" timestamp="2018-08-21T20:13:02Z" changeset="61868194" uid="6457180" user="promiseofbirth"/>
+  <node id="6223969240" lat="40.7482551" lon="-73.9880788" version="5" timestamp="2022-12-14T19:01:35Z" changeset="130086967" uid="11697944" user="kguenther24">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="6223969260" lat="40.7483045" lon="-73.9881935" version="4" timestamp="2022-12-14T19:01:35Z" changeset="130086967" uid="11697944" user="kguenther24">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="kerb" v="lowered"/>
+  </node>
+  <node id="6223969262" lat="40.7479942" lon="-73.9874817" version="2" timestamp="2021-10-06T03:43:17Z" changeset="112147749" uid="2591427" user="snake21"/>
+  <node id="6224277863" lat="40.7489960" lon="-73.9879356" version="3" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="6224277869" lat="40.7490303" lon="-73.9880169" version="4" timestamp="2022-12-14T19:01:35Z" changeset="130086967" uid="11697944" user="kguenther24">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="6350462397" lat="40.7500835" lon="-73.9844604" version="2" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb"/>
+  <node id="6350462399" lat="40.7494537" lon="-73.9849092" version="2" timestamp="2020-11-16T22:24:13Z" changeset="94230506" uid="9883637" user="brandonbds"/>
+  <node id="7782216992" lat="40.7476939" lon="-73.9830185" version="7" timestamp="2026-06-17T17:14:49Z" changeset="184236041" uid="19857719" user="VLD277">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="7782217017" lat="40.7483515" lon="-73.9846181" version="5" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8119462434" lat="40.7472179" lon="-73.9813870" version="5" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8119462452" lat="40.7470369" lon="-73.9815169" version="6" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8119462456" lat="40.7471348" lon="-73.9811908" version="5" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8119462464" lat="40.7471572" lon="-73.9815317" version="7" timestamp="2025-03-04T00:36:43Z" changeset="163182207" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8119462466" lat="40.7470113" lon="-73.9811827" version="8" timestamp="2025-03-04T00:36:44Z" changeset="163182207" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8119462477" lat="40.7465015" lon="-73.9820124" version="7" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+  </node>
+  <node id="8119462502" lat="40.7469592" lon="-73.9813387" version="5" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8122411153" lat="40.7503088" lon="-73.9792360" version="7" timestamp="2025-07-28T09:27:23Z" changeset="169601404" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="8122411157" lat="40.7502130" lon="-73.9791910" version="8" timestamp="2025-07-28T09:27:23Z" changeset="169601404" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+  </node>
+  <node id="8133342837" lat="40.7485303" lon="-73.9844880" version="6" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8133342841" lat="40.7485082" lon="-73.9846794" version="8" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8133342849" lat="40.7484061" lon="-73.9844327" version="7" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="8133342857" lat="40.7477279" lon="-73.9828628" version="8" timestamp="2026-06-17T17:14:49Z" changeset="184236041" uid="19857719" user="VLD277">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="8133342861" lat="40.7478585" lon="-73.9828943" version="9" timestamp="2026-06-17T17:14:49Z" changeset="184236041" uid="19857719" user="VLD277">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="8133342865" lat="40.7478048" lon="-73.9830364" version="12" timestamp="2026-06-17T17:14:49Z" changeset="184236041" uid="19857719" user="VLD277">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="8996587931" lat="40.7472138" lon="-73.9795720" version="4" timestamp="2024-09-18T03:56:36Z" changeset="156753903" uid="2591427" user="snake21"/>
+  <node id="9150486271" lat="40.7472342" lon="-73.9856866" version="1" timestamp="2021-10-06T03:43:17Z" changeset="112147749" uid="2591427" user="snake21"/>
+  <node id="9551028264" lat="40.7513757" lon="-73.9856437" version="1" timestamp="2022-03-03T06:08:38Z" changeset="118042435" uid="12195744" user="pmarkina_lyft"/>
+  <node id="9856196746" lat="40.7496616" lon="-73.9836653" version="7" timestamp="2023-04-01T16:44:23Z" changeset="134388393" uid="2456367" user="hdevine825">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9856196755" lat="40.7510408" lon="-73.9867294" version="8" timestamp="2026-08-27T22:55:45Z" changeset="188121656" uid="24288395" user="ankler">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135058" lat="40.7521432" lon="-73.9818682" version="9" timestamp="2026-06-12T11:39:43Z" changeset="184012979" uid="33181" user="svona ferðamaður">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135061" lat="40.7491542" lon="-73.9841875" version="4" timestamp="2023-04-02T02:55:54Z" changeset="134400092" uid="2456367" user="hdevine825">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="9965135062" lat="40.7491628" lon="-73.9840280" version="5" timestamp="2023-04-02T02:55:54Z" changeset="134400092" uid="2456367" user="hdevine825">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="9965135063" lat="40.7490594" lon="-73.9839633" version="4" timestamp="2023-04-02T02:55:54Z" changeset="134400092" uid="2456367" user="hdevine825">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="9965135064" lat="40.7490528" lon="-73.9841077" version="5" timestamp="2023-04-02T02:55:54Z" changeset="134400092" uid="2456367" user="hdevine825">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="9965135065" lat="40.7496794" lon="-73.9835029" version="6" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135066" lat="40.7497863" lon="-73.9835751" version="6" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135067" lat="40.7497860" lon="-73.9837554" version="6" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135077" lat="40.7502701" lon="-73.9832263" version="7" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135078" lat="40.7503950" lon="-73.9833027" version="8" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135079" lat="40.7504137" lon="-73.9831226" version="7" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135080" lat="40.7502938" lon="-73.9830618" version="9" timestamp="2025-07-28T10:16:12Z" changeset="169604363" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135081" lat="40.7508949" lon="-73.9827735" version="8" timestamp="2025-07-28T10:24:06Z" changeset="169604769" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135082" lat="40.7510094" lon="-73.9828445" version="8" timestamp="2025-07-28T10:24:06Z" changeset="169604769" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135084" lat="40.7509131" lon="-73.9826164" version="8" timestamp="2025-07-28T10:24:06Z" changeset="169604769" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="9965135088" lat="40.7515285" lon="-73.9821502" version="4" timestamp="2025-07-28T08:53:57Z" changeset="169599649" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="9971314381" lat="40.7468789" lon="-73.9808685" version="3" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21"/>
+  <node id="9971314382" lat="40.7486189" lon="-73.9849473" version="3" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21"/>
+  <node id="10166333031" lat="40.7510322" lon="-73.9826740" version="7" timestamp="2025-07-28T10:24:06Z" changeset="169604769" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="10166333070" lat="40.7516492" lon="-73.9822265" version="4" timestamp="2026-04-04T17:42:44Z" changeset="180866290" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10166333071" lat="40.7515263" lon="-73.9823156" version="4" timestamp="2026-04-04T17:42:44Z" changeset="180866290" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10168210235" lat="40.7471456" lon="-73.9835481" version="8" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="10168210237" lat="40.7471569" lon="-73.9834020" version="7" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="10168210239" lat="40.7470573" lon="-73.9833388" version="8" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="10168210241" lat="40.7470358" lon="-73.9834886" version="3" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10168260248" lat="40.7465891" lon="-73.9859012" version="3" timestamp="2024-04-03T02:18:34Z" changeset="149503711" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157357" lat="40.7490729" lon="-73.9801435" version="11" timestamp="2026-02-15T19:54:33Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="10169157358" lat="40.7490844" lon="-73.9800127" version="6" timestamp="2025-07-28T09:40:50Z" changeset="169602225" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157363" lat="40.7488964" lon="-73.9799096" version="6" timestamp="2025-07-28T09:40:50Z" changeset="169602225" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157364" lat="40.7489742" lon="-73.9800950" version="6" timestamp="2025-07-28T09:40:50Z" changeset="169602225" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157386" lat="40.7478331" lon="-73.9849950" version="3" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157387" lat="40.7477308" lon="-73.9849357" version="3" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157388" lat="40.7477111" lon="-73.9850837" version="3" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157390" lat="40.7478306" lon="-73.9851724" version="3" timestamp="2023-02-07T07:13:31Z" changeset="132190173" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169157392" lat="40.7465246" lon="-73.9839919" version="3" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10169532598" lat="40.7522618" lon="-73.9858161" version="4" timestamp="2026-06-17T13:45:19Z" changeset="184227504" uid="22891840" user="VLD317">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="10169532601" lat="40.7523747" lon="-73.9860836" version="4" timestamp="2026-06-17T13:45:19Z" changeset="184227504" uid="22891840" user="VLD317">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="10171035521" lat="40.7495891" lon="-73.9796428" version="5" timestamp="2025-07-28T09:40:50Z" changeset="169602225" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10171035522" lat="40.7497070" lon="-73.9795567" version="5" timestamp="2025-07-28T09:40:50Z" changeset="169602225" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10171035523" lat="40.7496822" lon="-73.9796934" version="5" timestamp="2025-07-28T09:40:50Z" changeset="169602225" uid="23064799" user="PedestrianMapping_SilentRoute">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10171137627" lat="40.7471192" lon="-73.9793478" version="3" timestamp="2024-09-18T03:56:36Z" changeset="156753903" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10171951884" lat="40.7509388" lon="-73.9787898" version="11" timestamp="2026-06-10T23:13:14Z" changeset="183946485" uid="33181" user="svona ferðamaður">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="10173045237" lat="40.7472091" lon="-73.9856271" version="3" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10173045239" lat="40.7472091" lon="-73.9854489" version="5" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10173045241" lat="40.7471064" lon="-73.9853813" version="4" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10173045243" lat="40.7470959" lon="-73.9855306" version="4" timestamp="2024-02-11T05:27:37Z" changeset="147315792" uid="384667" user="MxxCon">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10173357075" lat="40.7484728" lon="-73.9825780" version="3" timestamp="2026-06-17T17:18:38Z" changeset="184236210" uid="19857719" user="VLD277">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10173357077" lat="40.7484941" lon="-73.9824309" version="3" timestamp="2026-06-17T17:18:38Z" changeset="184236210" uid="19857719" user="VLD277">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10173357079" lat="40.7483876" lon="-73.9823753" version="4" timestamp="2026-06-17T17:18:38Z" changeset="184236210" uid="19857719" user="VLD277">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10173357081" lat="40.7483767" lon="-73.9825146" version="3" timestamp="2026-06-17T17:18:38Z" changeset="184236210" uid="19857719" user="VLD277">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="10703807884" lat="40.7507276" lon="-73.9802494" version="1" timestamp="2023-03-02T08:08:16Z" changeset="133200771" uid="11249764" user="ashybko_lyft"/>
+  <node id="10703807885" lat="40.7513377" lon="-73.9816903" version="2" timestamp="2024-04-11T14:46:50Z" changeset="149868330" uid="298513" user="TheBestIdea"/>
+  <node id="11043134797" lat="40.7474946" lon="-73.9852412" version="1" timestamp="2023-07-13T00:37:06Z" changeset="138442066" uid="384667" user="MxxCon">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="5th Avenue &amp; West 33rd Street"/>
+    <tag k="network" v="NYC Transit"/>
+    <tag k="operator" v="MTA"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="11043134798" lat="40.7472614" lon="-73.9817821" version="2" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="East 34th Street &amp; Park Avenue"/>
+    <tag k="network" v="NYC Transit"/>
+    <tag k="operator" v="MTA"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="11043321020" lat="40.7514044" lon="-73.9803183" version="1" timestamp="2023-07-13T04:10:39Z" changeset="138445137" uid="384667" user="MxxCon">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="Madison Avenue &amp; East 40th Street"/>
+    <tag k="network" v="NYC Transit"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="11043321022" lat="40.7470175" lon="-73.9835021" version="1" timestamp="2023-07-13T04:10:39Z" changeset="138445137" uid="384667" user="MxxCon">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="Madison Avenue &amp; East 33rd Street"/>
+    <tag k="network" v="NYC Transit"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="11140783103" lat="40.7482914" lon="-73.9821451" version="2" timestamp="2023-11-09T20:30:25Z" changeset="143838399" uid="384667" user="MxxCon"/>
+  <node id="11273068444" lat="40.7482954" lon="-73.9802227" version="4" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11273068445" lat="40.7483901" lon="-73.9802789" version="4" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11273068446" lat="40.7482757" lon="-73.9803617" version="3" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11273068447" lat="40.7484680" lon="-73.9804628" version="4" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11273068448" lat="40.7483534" lon="-73.9805466" version="3" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11273068449" lat="40.7484521" lon="-73.9805939" version="4" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11336685982" lat="40.7476775" lon="-73.9806713" version="2" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11336685983" lat="40.7477740" lon="-73.9807228" version="2" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11336685984" lat="40.7476552" lon="-73.9808109" version="2" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11336685985" lat="40.7478551" lon="-73.9809146" version="2" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11336685986" lat="40.7477349" lon="-73.9810007" version="2" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11336685987" lat="40.7478340" lon="-73.9810411" version="2" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11336685988" lat="40.7490128" lon="-73.9819229" version="8" timestamp="2026-02-15T19:43:05Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="11336685989" lat="40.7491107" lon="-73.9819800" version="7" timestamp="2026-02-15T19:42:52Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="11336685990" lat="40.7489907" lon="-73.9820679" version="6" timestamp="2026-02-15T19:44:22Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="11336685991" lat="40.7490966" lon="-73.9821216" version="7" timestamp="2026-02-15T19:44:15Z" changeset="178597217" uid="23044853" user="Spender8128">
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:markings" v="zebra"/>
+    <tag k="crossing:signals" v="yes"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="11813261922" lat="40.7475178" lon="-73.9823858" version="1" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21"/>
+  <node id="11813261923" lat="40.7476728" lon="-73.9827239" version="1" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21"/>
+  <node id="11813261924" lat="40.7481167" lon="-73.9837483" version="1" timestamp="2024-04-13T06:34:15Z" changeset="149937183" uid="2591427" user="snake21"/>
+  <node id="12181374923" lat="40.7469199" lon="-73.9813703" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374924" lat="40.7472673" lon="-73.9813516" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374925" lat="40.7471935" lon="-73.9816186" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="backward"/>
+  </node>
+  <node id="12181374926" lat="40.7469855" lon="-73.9811210" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374927" lat="40.7476558" lon="-73.9806200" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374928" lat="40.7477711" lon="-73.9808926" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374929" lat="40.7476200" lon="-73.9808366" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374930" lat="40.7478960" lon="-73.9808843" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374931" lat="40.7482393" lon="-73.9803879" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374932" lat="40.7484784" lon="-73.9806564" version="2" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374933" lat="40.7482781" lon="-73.9801817" version="2" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb"/>
+  <node id="12181374934" lat="40.7483578" lon="-73.9803705" version="2" timestamp="2025-06-16T18:26:18Z" changeset="167707589" uid="4400159" user="jmapb">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374935" lat="40.7485091" lon="-73.9804319" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374938" lat="40.7490899" lon="-73.9801834" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="12181374939" lat="40.7488564" lon="-73.9799388" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374940" lat="40.7491308" lon="-73.9799782" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374941" lat="40.7490061" lon="-73.9799873" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374942" lat="40.7497504" lon="-73.9795253" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374944" lat="40.7497163" lon="-73.9797702" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12181374950" lat="40.7503262" lon="-73.9792766" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21"/>
+  <node id="12181374957" lat="40.7509637" lon="-73.9788453" version="1" timestamp="2024-09-17T03:26:54Z" changeset="156711470" uid="2591427" user="snake21">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+    <tag k="traffic_signals:direction" v="forward"/>
+  </node>
+  <node id="12183285335" lat="40.7471602" lon="-73.9794448" version="1" timestamp="2024-09-18T03:56:36Z" changeset="156753903" uid="2591427" user="snake21"/>
+  <node id="13677213620" lat="40.7473364" lon="-73.9810436" version="1" timestamp="2026-03-25T08:53:16Z" changeset="180395229" uid="21672285" user="tkotnala_lyft"/>
+  <node id="13706281951" lat="40.7516933" lon="-73.9821945" version="1" timestamp="2026-04-04T17:42:44Z" changeset="180866290" uid="384667" user="MxxCon">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="5th Avenue &amp; West 39th Street"/>
+    <tag k="network" v="NYC Transit"/>
+    <tag k="operator" v="MTA"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="ref" v="450057"/>
+  </node>
+  <node id="13718124375" lat="40.7507935" lon="-73.9861431" version="1" timestamp="2026-04-09T09:52:50Z" changeset="181088110" uid="23007141" user="andradab_grab"/>
+  <way id="5670600" version="68" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="9971314382"/>
+    <nd ref="4770624020"/>
+    <nd ref="3857334397"/>
+    <nd ref="42430304"/>
+    <tag k="access:lanes" v="yes|no"/>
+    <tag k="bus:lanes" v="yes|designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="hgv" v="designated"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="West 34th Street"/>
+    <tag k="name:ru" v="Западная 34-я стрит"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q110049"/>
+    <tag k="wikipedia" v="en:34th Street (Manhattan)"/>
+  </way>
+  <way id="5671315" version="52" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445365"/>
+    <nd ref="8133342865"/>
+    <nd ref="4207937589"/>
+    <tag k="access:lanes:backward" v="yes|yes|no"/>
+    <tag k="access:lanes:forward" v="yes|no"/>
+    <tag k="bus:lanes:backward" v="yes|yes|designated"/>
+    <tag k="bus:lanes:forward" v="yes|designated"/>
+    <tag k="hgv" v="designated"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="5"/>
+    <tag k="lanes:backward" v="3"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lanes:forward" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 34th Street"/>
+    <tag k="name:ru" v="Восточная 34-я стрит"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:backward" v="left||"/>
+    <tag k="wikidata" v="Q110049"/>
+    <tag k="wikipedia" v="en:34th Street (Manhattan)"/>
+  </way>
+  <way id="5671442" version="46" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42446701"/>
+    <nd ref="10169157390"/>
+    <nd ref="6224277863"/>
+    <nd ref="6224277869"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="West 33rd Street"/>
+    <tag k="name:ru" v="Западная 33-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+  </way>
+  <way id="5671693" version="43" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42443680"/>
+    <nd ref="10173045241"/>
+    <nd ref="4960503203"/>
+    <nd ref="10169157392"/>
+    <nd ref="42445899"/>
+    <tag k="cycleway:right" v="shared_lane"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="3"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="motor_vehicle:conditional" v="destination @ (Fr 17:00-23:00; Sa-Su 12:00-23:00)"/>
+    <tag k="name" v="East 32nd Street"/>
+    <tag k="name:ru" v="Восточная 32-я стрит"/>
+    <tag k="name_1" v="East 32 Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="5673231" version="50" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42452973"/>
+    <nd ref="9965135065"/>
+    <nd ref="11336685991"/>
+    <nd ref="42445908"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 36th Street"/>
+    <tag k="name:ru" v="Восточная 36-я стрит"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="5673380" version="59" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="3786901738"/>
+    <nd ref="3786901740"/>
+    <nd ref="12181374923"/>
+    <nd ref="8119462502"/>
+    <nd ref="3786901743"/>
+    <tag k="alt_name" v="4th Avenue"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue"/>
+    <tag k="name:en" v="Park Avenue"/>
+    <tag k="name:ru" v="Парк-Авеню"/>
+    <tag k="old_name" v="4th Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:left" v="no"/>
+    <tag k="sidewalk:right" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109711"/>
+    <tag k="wikipedia" v="en:Park Avenue"/>
+  </way>
+  <way id="46469731" version="38" timestamp="2026-04-05T01:29:47Z" changeset="180877772" uid="384667" user="MxxCon">
+    <nd ref="42434948"/>
+    <nd ref="10173357075"/>
+    <nd ref="9965135063"/>
+    <nd ref="42434946"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="East 35th Street"/>
+    <tag k="name:ru" v="Восточная 35-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="46520833" version="34" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="561042188"/>
+    <nd ref="8119462477"/>
+    <nd ref="10168210239"/>
+    <nd ref="42445903"/>
+    <nd ref="10168210235"/>
+    <nd ref="4493840514"/>
+    <nd ref="10169157387"/>
+    <nd ref="42446701"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 33rd Street"/>
+    <tag k="name:ru" v="Восточная 33-я стрит"/>
+    <tag k="name_1" v="East 33 Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="46520834" version="20" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="595142429"/>
+    <nd ref="561042196"/>
+    <tag k="alt_name" v="Murray Hill Tunnel"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="foot" v="no"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="layer" v="-1"/>
+    <tag k="level" v="-1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue Tunnel"/>
+    <tag k="name:tr" v="Park Avenue Tüneli"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk" v="no"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="tunnel" v="yes"/>
+    <tag k="wikidata" v="Q2628830"/>
+    <tag k="wikipedia" v="en:Park Avenue Tunnel (roadway)"/>
+  </way>
+  <way id="46522006" version="40" timestamp="2026-06-15T05:12:29Z" changeset="184119441" uid="21759014" user="Mintusha98">
+    <nd ref="42430311"/>
+    <nd ref="9856196755"/>
+    <nd ref="13718124375"/>
+    <nd ref="6350462397"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="motor_vehicle:conditional" v="destination @ (Fr 17:00-23:00; Sa 12:00-23:00; Su 12:00-21:00)"/>
+    <tag k="name" v="West 36th Street"/>
+    <tag k="name:ru" v="Западная 36-я стрит"/>
+    <tag k="name_1" v="West 36 Street"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="68674961" version="54" timestamp="2026-07-10T12:40:16Z" changeset="185472497" uid="21759008" user="Mruthula12">
+    <nd ref="42434951"/>
+    <nd ref="11336685983"/>
+    <nd ref="12181374931"/>
+    <nd ref="11273068446"/>
+    <nd ref="42458333"/>
+    <nd ref="11273068445"/>
+    <nd ref="12181374939"/>
+    <nd ref="10169157363"/>
+    <nd ref="42449683"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue"/>
+    <tag k="name:en" v="Park Avenue"/>
+    <tag k="name:ru" v="Парк-Авеню"/>
+    <tag k="old_name" v="4th Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:left" v="no"/>
+    <tag k="parking:right" v="lane"/>
+    <tag k="sidewalk:left" v="no"/>
+    <tag k="sidewalk:right" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109711"/>
+    <tag k="wikipedia" v="en:Park Avenue"/>
+  </way>
+  <way id="68674965" version="41" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="561042190"/>
+    <nd ref="8119462452"/>
+    <nd ref="3786901746"/>
+    <nd ref="561042188"/>
+    <tag k="foot" v="yes"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue"/>
+    <tag k="name:en" v="Park Avenue"/>
+    <tag k="name:ru" v="Парк-Авеню"/>
+    <tag k="old_name" v="4th Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:left" v="no"/>
+    <tag k="sidewalk:right" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes" v="through|through|right"/>
+    <tag k="wikidata" v="Q109711"/>
+    <tag k="wikipedia" v="en:Park Avenue"/>
+  </way>
+  <way id="68674968" version="45" timestamp="2026-07-08T15:47:56Z" changeset="185350325" uid="21759008" user="Mruthula12">
+    <nd ref="561042195"/>
+    <nd ref="8122411157"/>
+    <nd ref="12181374942"/>
+    <nd ref="10171035522"/>
+    <nd ref="561042194"/>
+    <nd ref="10171035521"/>
+    <nd ref="12181374940"/>
+    <nd ref="10169157358"/>
+    <nd ref="561042192"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue"/>
+    <tag k="name:en" v="Park Avenue"/>
+    <tag k="name:ru" v="Парк-Авеню"/>
+    <tag k="old_name" v="4th Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:left" v="no"/>
+    <tag k="parking:right" v="lane"/>
+    <tag k="sidewalk:left" v="no"/>
+    <tag k="sidewalk:right" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109711"/>
+    <tag k="wikipedia" v="en:Park Avenue"/>
+  </way>
+  <way id="195743182" version="51" timestamp="2026-06-17T11:27:46Z" changeset="184222087" uid="17715526" user="Gangadi Anusha">
+    <nd ref="42445651"/>
+    <nd ref="3997454668"/>
+    <nd ref="11043321020"/>
+    <nd ref="3997454669"/>
+    <nd ref="42445914"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Madison Avenue"/>
+    <tag k="name:etymology:wikidata" v="Q11813"/>
+    <tag k="name:ru" v="Мэдисон-авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109849"/>
+    <tag k="wikipedia" v="en:Madison Avenue"/>
+  </way>
+  <way id="195743343" version="41" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42437644"/>
+    <nd ref="7782217017"/>
+    <nd ref="10169157386"/>
+    <nd ref="42446701"/>
+    <nd ref="10169157388"/>
+    <nd ref="11043134797"/>
+    <nd ref="10173045239"/>
+    <nd ref="42443680"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="5th Avenue"/>
+    <tag k="name:en" v="5th Avenue"/>
+    <tag k="name:ru" v="5-я авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109858"/>
+    <tag k="wikipedia" v="en:Fifth Avenue"/>
+  </way>
+  <way id="226041001" version="41" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445651"/>
+    <nd ref="3997454667"/>
+    <nd ref="10703807885"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway:left" v="track"/>
+    <tag k="cycleway:left:oneway" v="yes"/>
+    <tag k="cycleway:left:traffic_mode" v="parking"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="East 39th Street"/>
+    <tag k="name:ru" v="Восточная 39-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="226041004" version="37" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445914"/>
+    <nd ref="3997454670"/>
+    <nd ref="12181374957"/>
+    <nd ref="10171951884"/>
+    <nd ref="561042198"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway:right" v="shared_lane"/>
+    <tag k="cycleway:right:lane" v="pictogram"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 40th Street"/>
+    <tag k="name:ru" v="Восточная 40-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="384178814" version="39" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="3786901743"/>
+    <nd ref="561042190"/>
+    <tag k="bus:lanes" v="yes|designated"/>
+    <tag k="hgv" v="designated"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 34th Street"/>
+    <tag k="name:ru" v="Восточная 34-я стрит"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q110049"/>
+    <tag k="wikipedia" v="en:34th Street (Manhattan)"/>
+  </way>
+  <way id="415849235" version="37" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="6223969260"/>
+    <nd ref="6223969240"/>
+    <nd ref="6223969262"/>
+    <nd ref="9150486271"/>
+    <nd ref="10173045237"/>
+    <nd ref="42443680"/>
+    <tag k="alt_name" v="Korea Way"/>
+    <tag k="cycleway:both" v="no"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="motor_vehicle:conditional" v="destination @ (Fr 17:00-23:00; Sa-Su 12:00-23:00)"/>
+    <tag k="name" v="West 32nd Street"/>
+    <tag k="name:ru" v="Западная 32-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="420496529" version="35" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42443950"/>
+    <nd ref="9965135077"/>
+    <nd ref="9965135066"/>
+    <nd ref="42452973"/>
+    <tag k="access:lanes" v="yes|yes|yes|no|no"/>
+    <tag k="bus:lanes" v="yes|yes|yes|designated|designated"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="5"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="5th Avenue"/>
+    <tag k="name:en" v="5th Avenue"/>
+    <tag k="name:ru" v="5-я авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109858"/>
+    <tag k="wikipedia" v="en:Fifth Avenue"/>
+  </way>
+  <way id="420499931" version="31" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445909"/>
+    <nd ref="4903169923"/>
+    <nd ref="9965135080"/>
+    <nd ref="42443950"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 37th Street"/>
+    <tag k="name:ru" v="Восточная 37-я стрит"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="420499932" version="36" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445899"/>
+    <nd ref="3252586224"/>
+    <nd ref="4960503206"/>
+    <nd ref="11043321022"/>
+    <nd ref="10168210241"/>
+    <nd ref="42445903"/>
+    <nd ref="10168210237"/>
+    <nd ref="7782216992"/>
+    <nd ref="42445365"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Madison Avenue"/>
+    <tag k="name:etymology:wikidata" v="Q11813"/>
+    <tag k="name:ru" v="Мэдисон-авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109849"/>
+    <tag k="wikipedia" v="en:Madison Avenue"/>
+  </way>
+  <way id="420904658" version="39" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="561042190"/>
+    <nd ref="8119462464"/>
+    <nd ref="12181374925"/>
+    <nd ref="11043134798"/>
+    <nd ref="11813261922"/>
+    <nd ref="11813261923"/>
+    <nd ref="8133342857"/>
+    <nd ref="42445365"/>
+    <tag k="bus:lanes" v="yes|designated"/>
+    <tag k="hgv" v="designated"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 34th Street"/>
+    <tag k="name:ru" v="Восточная 34-я стрит"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q110049"/>
+    <tag k="wikipedia" v="en:34th Street (Manhattan)"/>
+  </way>
+  <way id="420904659" version="39" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="4207937589"/>
+    <nd ref="11813261924"/>
+    <nd ref="8133342849"/>
+    <nd ref="42437644"/>
+    <tag k="access:lanes:backward" v="yes|no"/>
+    <tag k="access:lanes:forward" v="yes|no"/>
+    <tag k="bus:lanes:backward" v="yes|designated"/>
+    <tag k="bus:lanes:forward" v="yes|designated"/>
+    <tag k="hgv" v="designated"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 34th Street"/>
+    <tag k="name:ru" v="Восточная 34-я стрит"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q110049"/>
+    <tag k="wikipedia" v="en:34th Street (Manhattan)"/>
+  </way>
+  <way id="420904660" version="31" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42443950"/>
+    <nd ref="9965135078"/>
+    <nd ref="9551028264"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="West 37th Street"/>
+    <tag k="name:ru" v="Западная 37-я стрит"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="438385431" version="40" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42432436"/>
+    <nd ref="4625652083"/>
+    <nd ref="4625653591"/>
+    <nd ref="42446488"/>
+    <nd ref="9965135058"/>
+    <nd ref="13706281951"/>
+    <nd ref="10166333070"/>
+    <nd ref="42445649"/>
+    <nd ref="10166333071"/>
+    <nd ref="10166333031"/>
+    <nd ref="42433604"/>
+    <nd ref="9965135081"/>
+    <nd ref="9965135079"/>
+    <nd ref="42443950"/>
+    <tag k="access:lanes" v="yes|yes|yes|no|no"/>
+    <tag k="bus:lanes" v="yes|yes|yes|designated|designated"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="5"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="5th Avenue"/>
+    <tag k="name:en" v="5th Avenue"/>
+    <tag k="name:ru" v="5-я авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109858"/>
+    <tag k="wikipedia" v="en:Fifth Avenue"/>
+  </way>
+  <way id="458166892" version="37" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42452973"/>
+    <nd ref="9856196746"/>
+    <nd ref="9965135062"/>
+    <nd ref="42434946"/>
+    <nd ref="9965135064"/>
+    <nd ref="8133342837"/>
+    <nd ref="42437644"/>
+    <tag k="access:lanes" v="yes|yes|yes|no|no"/>
+    <tag k="bus:lanes" v="yes|yes|yes|designated|designated"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="5"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="5th Avenue"/>
+    <tag k="name:en" v="5th Avenue"/>
+    <tag k="name:ru" v="5-я авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109858"/>
+    <tag k="wikipedia" v="en:Fifth Avenue"/>
+  </way>
+  <way id="458166893" version="37" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445908"/>
+    <nd ref="11336685988"/>
+    <nd ref="12181374932"/>
+    <nd ref="11273068449"/>
+    <nd ref="561042193"/>
+    <nd ref="12181374934"/>
+    <nd ref="42458333"/>
+    <nd ref="11273068444"/>
+    <nd ref="12181374933"/>
+    <nd ref="5057315765"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 36th Street"/>
+    <tag k="name:ru" v="Восточная 36-я стрит"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="458166894" version="32" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445908"/>
+    <nd ref="11336685989"/>
+    <nd ref="4903169922"/>
+    <nd ref="42445909"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Madison Avenue"/>
+    <tag k="name:etymology:wikidata" v="Q11813"/>
+    <tag k="name:ru" v="Мэдисон-авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109849"/>
+    <tag k="wikipedia" v="en:Madison Avenue"/>
+  </way>
+  <way id="483236728" version="37" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42433604"/>
+    <nd ref="9965135084"/>
+    <nd ref="3997454663"/>
+    <nd ref="42445910"/>
+    <tag k="alt_name" v="E 38th st"/>
+    <tag k="cycleway:left" v="track"/>
+    <tag k="cycleway:left:oneway" v="yes"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 38th Street"/>
+    <tag k="name:ru" v="Восточная 38-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="496983399" version="36" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42434946"/>
+    <nd ref="9965135061"/>
+    <nd ref="6350462399"/>
+    <nd ref="4886239172"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="West 35th Street"/>
+    <tag k="name:ru" v="Западная 35-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="542096279" version="34" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42445365"/>
+    <nd ref="8133342861"/>
+    <nd ref="4960503208"/>
+    <nd ref="10173357081"/>
+    <nd ref="42434948"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Madison Avenue"/>
+    <tag k="name:etymology:wikidata" v="Q11813"/>
+    <tag k="name:ru" v="Мэдисон-авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109849"/>
+    <tag k="wikipedia" v="en:Madison Avenue"/>
+  </way>
+  <way id="542257009" version="35" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42428268"/>
+    <nd ref="4707471833"/>
+    <nd ref="10169532601"/>
+    <nd ref="42430317"/>
+    <nd ref="10169532598"/>
+    <nd ref="5846916769"/>
+    <nd ref="5846916775"/>
+    <nd ref="5846916773"/>
+    <nd ref="5846916776"/>
+    <nd ref="9965135082"/>
+    <nd ref="42433604"/>
+    <tag k="cycleway:left" v="track"/>
+    <tag k="cycleway:left:oneway" v="yes"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="West 38th Street"/>
+    <tag k="name:ru" v="Западная 38-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="588168464" version="30" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42443680"/>
+    <nd ref="10173045243"/>
+    <nd ref="10168260248"/>
+    <nd ref="42451674"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="5th Avenue"/>
+    <tag k="name:en" v="5th Avenue"/>
+    <tag k="name:ru" v="5-я авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109858"/>
+    <tag k="wikipedia" v="en:Fifth Avenue"/>
+  </way>
+  <way id="858965315" version="30" timestamp="2026-06-17T12:50:30Z" changeset="184225101" uid="17715526" user="Gangadi Anusha">
+    <nd ref="42445910"/>
+    <nd ref="3997454662"/>
+    <nd ref="12181374944"/>
+    <nd ref="10171035523"/>
+    <nd ref="561042194"/>
+    <tag k="alt_name" v="E 38th st"/>
+    <tag k="cycleway:left" v="lane"/>
+    <tag k="cycleway:left:oneway" v="yes"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 38th Street"/>
+    <tag k="name:ru" v="Восточная 38-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="989793292" version="29" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42434954"/>
+    <nd ref="10171137627"/>
+    <nd ref="12183285335"/>
+    <nd ref="8996587931"/>
+    <nd ref="12181374927"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 35th Street"/>
+    <tag k="name:ru" v="Восточная 35-я стрит"/>
+    <tag k="name_1" v="East 35 Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="989793293" version="31" timestamp="2026-06-24T16:45:05Z" changeset="184533967" uid="298513" user="TheBestIdea">
+    <nd ref="3786901743"/>
+    <nd ref="8119462456"/>
+    <nd ref="13677213620"/>
+    <nd ref="12181374929"/>
+    <nd ref="11336685984"/>
+    <nd ref="42434951"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue"/>
+    <tag k="name:en" v="Park Avenue"/>
+    <tag k="name:ru" v="Парк-Авеню"/>
+    <tag k="old_name" v="4th Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:left" v="no"/>
+    <tag k="parking:right" v="lane"/>
+    <tag k="sidewalk:left" v="no"/>
+    <tag k="sidewalk:right" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109711"/>
+    <tag k="wikipedia" v="en:Park Avenue"/>
+  </way>
+  <way id="989793294" version="25" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="12181374927"/>
+    <nd ref="11336685982"/>
+    <nd ref="42434951"/>
+    <nd ref="12181374928"/>
+    <nd ref="561042191"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 35th Street"/>
+    <tag k="name:ru" v="Восточная 35-я стрит"/>
+    <tag k="name_1" v="East 35 Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="989793295" version="30" timestamp="2026-06-24T16:45:05Z" changeset="184533967" uid="298513" user="TheBestIdea">
+    <nd ref="561042191"/>
+    <nd ref="11336685986"/>
+    <nd ref="12181374924"/>
+    <nd ref="8119462434"/>
+    <nd ref="561042190"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue"/>
+    <tag k="name:en" v="Park Avenue"/>
+    <tag k="name:ru" v="Парк-Авеню"/>
+    <tag k="old_name" v="4th Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:left" v="no"/>
+    <tag k="parking:right" v="lane"/>
+    <tag k="sidewalk:left" v="no"/>
+    <tag k="sidewalk:right" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109711"/>
+    <tag k="wikipedia" v="en:Park Avenue"/>
+  </way>
+  <way id="1036712190" version="25" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="9551028264"/>
+    <nd ref="4207937591"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="West 37th Street"/>
+    <tag k="name:ru" v="Западная 37-я стрит"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes" v="||right"/>
+  </way>
+  <way id="1088325195" version="26" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="9971314381"/>
+    <nd ref="12181374926"/>
+    <nd ref="8119462466"/>
+    <nd ref="3786901743"/>
+    <tag k="bus:lanes:backward" v="yes|designated"/>
+    <tag k="bus:lanes:forward" v="yes|designated|yes"/>
+    <tag k="hgv" v="designated"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="5"/>
+    <tag k="lanes:backward" v="2"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lanes:forward" v="3"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 34th Street"/>
+    <tag k="name:ru" v="Восточная 34-я стрит"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:forward" v="||right"/>
+    <tag k="wikidata" v="Q110049"/>
+    <tag k="wikipedia" v="en:34th Street (Manhattan)"/>
+  </way>
+  <way id="1088325196" version="27" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42437644"/>
+    <nd ref="8133342841"/>
+    <nd ref="9971314382"/>
+    <tag k="access" v="yes"/>
+    <tag k="access:lanes:backward" v="yes|no|yes"/>
+    <tag k="access:lanes:forward" v="yes|no"/>
+    <tag k="bus:lanes:backward" v="yes|designated|yes"/>
+    <tag k="bus:lanes:forward" v="yes|designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="hgv" v="designated"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="5"/>
+    <tag k="lanes:backward" v="3"/>
+    <tag k="lanes:bus" v="2"/>
+    <tag k="lanes:forward" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="West 34th Street"/>
+    <tag k="name:ru" v="Западная 34-я стрит"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:backward" v="||right"/>
+    <tag k="wikidata" v="Q110049"/>
+    <tag k="wikipedia" v="en:34th Street (Manhattan)"/>
+  </way>
+  <way id="1150636499" version="25" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="561042195"/>
+    <nd ref="8122411153"/>
+    <nd ref="12181374950"/>
+    <nd ref="4711654705"/>
+    <nd ref="10703807884"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway:left" v="track"/>
+    <tag k="cycleway:left:oneway" v="yes"/>
+    <tag k="cycleway:left:separation" v="flex_post"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 39th Street"/>
+    <tag k="name:ru" v="Восточная 39-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1150636500" version="24" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="10703807884"/>
+    <nd ref="4711654714"/>
+    <nd ref="3997454666"/>
+    <nd ref="42445651"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway:left" v="lane"/>
+    <tag k="cycleway:left:buffer" v="yes"/>
+    <tag k="cycleway:left:oneway" v="yes"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="East 39th Street"/>
+    <tag k="name:ru" v="Восточная 39-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes" v="|right"/>
+  </way>
+  <way id="1150636501" version="24" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="10703807885"/>
+    <nd ref="9965135088"/>
+    <nd ref="42445649"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway:left" v="lane"/>
+    <tag k="cycleway:left:buffer" v="yes"/>
+    <tag k="cycleway:left:oneway" v="yes"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="East 39th Street"/>
+    <tag k="name:ru" v="Восточная 39-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes" v="left|"/>
+  </way>
+  <way id="1201643836" version="5" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="561042191"/>
+    <nd ref="11336685987"/>
+    <nd ref="11140783103"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 35th Street"/>
+    <tag k="name:ru" v="Восточная 35-я стрит"/>
+    <tag k="name_1" v="East 35 Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1201643837" version="6" timestamp="2026-05-02T05:21:33Z" changeset="182100660" uid="11303102" user="watmildon">
+    <nd ref="42434948"/>
+    <nd ref="10173357077"/>
+    <nd ref="11336685990"/>
+    <nd ref="42445908"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Madison Avenue"/>
+    <tag k="name:etymology:wikidata" v="Q11813"/>
+    <tag k="name:ru" v="Мэдисон-авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109849"/>
+    <tag k="wikipedia" v="en:Madison Avenue"/>
+  </way>
+  <way id="1201643838" version="3" timestamp="2026-04-05T01:29:47Z" changeset="180877772" uid="384667" user="MxxCon">
+    <nd ref="11140783103"/>
+    <nd ref="10173357079"/>
+    <nd ref="42434948"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="East 35th Street"/>
+    <tag k="name:ru" v="Восточная 35-я стрит"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes" v="||right"/>
+  </way>
+  <way id="1529537887" version="1" timestamp="2026-06-15T05:12:29Z" changeset="184119441" uid="21759014" user="Mintusha98">
+    <nd ref="6350462397"/>
+    <nd ref="3769557279"/>
+    <nd ref="9965135067"/>
+    <nd ref="42452973"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="motor_vehicle:conditional" v="destination @ (Fr 17:00-23:00; Sa 12:00-23:00; Su 12:00-21:00)"/>
+    <tag k="name" v="West 36th Street"/>
+    <tag k="name:ru" v="Западная 36-я стрит"/>
+    <tag k="name_1" v="West 36 Street"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1530333337" version="1" timestamp="2026-06-17T11:27:46Z" changeset="184222087" uid="17715526" user="Gangadi Anusha">
+    <nd ref="42445910"/>
+    <nd ref="3997454664"/>
+    <nd ref="3997454665"/>
+    <nd ref="42445651"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Madison Avenue"/>
+    <tag k="name:etymology:wikidata" v="Q11813"/>
+    <tag k="name:ru" v="Мэдисон-авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109849"/>
+    <tag k="wikipedia" v="en:Madison Avenue"/>
+  </way>
+  <way id="1530333338" version="1" timestamp="2026-06-17T11:27:46Z" changeset="184222087" uid="17715526" user="Gangadi Anusha">
+    <nd ref="42445909"/>
+    <nd ref="4903169924"/>
+    <nd ref="4960516267"/>
+    <nd ref="3997454661"/>
+    <nd ref="42445910"/>
+    <tag k="cycleway:right" v="no"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Madison Avenue"/>
+    <tag k="name:etymology:wikidata" v="Q11813"/>
+    <tag k="name:ru" v="Мэдисон-авеню"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109849"/>
+    <tag k="wikipedia" v="en:Madison Avenue"/>
+  </way>
+  <way id="1536568236" version="1" timestamp="2026-07-08T15:47:56Z" changeset="185350325" uid="21759008" user="Mruthula12">
+    <nd ref="561042192"/>
+    <nd ref="10169157357"/>
+    <nd ref="12181374938"/>
+    <nd ref="4903169925"/>
+    <nd ref="42445909"/>
+    <tag k="alt_name" v="Jan Karski Corner"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 37th Street"/>
+    <tag k="name:ru" v="Восточная 37-я стрит"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1536568237" version="1" timestamp="2026-07-08T15:47:56Z" changeset="185350325" uid="21759008" user="Mruthula12">
+    <nd ref="561042192"/>
+    <nd ref="10169157364"/>
+    <nd ref="12181374935"/>
+    <nd ref="11273068447"/>
+    <nd ref="561042193"/>
+    <nd ref="11273068448"/>
+    <nd ref="12181374930"/>
+    <nd ref="11336685985"/>
+    <nd ref="561042191"/>
+    <tag k="hgv" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Park Avenue"/>
+    <tag k="name:en" v="Park Avenue"/>
+    <tag k="name:ru" v="Парк-Авеню"/>
+    <tag k="old_name" v="4th Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:left" v="no"/>
+    <tag k="parking:right" v="lane"/>
+    <tag k="sidewalk:left" v="no"/>
+    <tag k="sidewalk:right" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="wikidata" v="Q109711"/>
+    <tag k="wikipedia" v="en:Park Avenue"/>
+  </way>
+  <way id="1537180166" version="2" timestamp="2026-07-10T12:40:16Z" changeset="185472497" uid="21759008" user="Mruthula12">
+    <nd ref="42449683"/>
+    <nd ref="12181374941"/>
+    <nd ref="561042192"/>
+    <tag k="alt_name" v="Jan Karski Corner"/>
+    <tag k="hgv" v="destination"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="East 37th Street"/>
+    <tag k="name:ru" v="Восточная 37-я стрит"/>
+    <tag k="note" v="thru street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="sidewalk:both" v="separate"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+
+</osm>

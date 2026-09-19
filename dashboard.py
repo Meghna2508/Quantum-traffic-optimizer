@@ -599,57 +599,153 @@ with tab_qaoa:
 # =============================================================================
 # TAB 4: NETWORK TOPOLOGY
 # =============================================================================
+@st.cache_data
+def load_osm_figure():
+    net_path = "sumo/osm/manhattan.net.xml"
+    if not os.path.exists(net_path) or not SUMO_AVAILABLE:
+        return None
+    try:
+        net = sumolib.net.readNet(net_path)
+        fig = go.Figure()
+        edge_x, edge_y = [], []
+        for edge in net.getEdges():
+            if not edge.isSpecial():
+                shape = edge.getShape()
+                for i in range(len(shape) - 1):
+                    edge_x.extend([shape[i][0], shape[i + 1][0], None])
+                    edge_y.extend([shape[i][1], shape[i + 1][1], None])
+        fig.add_trace(go.Scatter(
+            x=edge_x, y=edge_y, mode="lines",
+            line=dict(color="#475569", width=2), hoverinfo="none",
+            name="Roads (Manhattan Midtown)"
+        ))
+        corridor_edges = ["420904658#0", "542096279#0", "1201643837#0", "458166894#0", "420499931#0", "420904660#0"]
+        corr_x, corr_y = [], []
+        for eid in corridor_edges:
+            try:
+                e = net.getEdge(eid)
+                shape = e.getShape()
+                for i in range(len(shape) - 1):
+                    corr_x.extend([shape[i][0], shape[i + 1][0], None])
+                    corr_y.extend([shape[i][1], shape[i + 1][1], None])
+            except Exception:
+                pass
+        fig.add_trace(go.Scatter(
+            x=corr_x, y=corr_y, mode="lines",
+            line=dict(color="#ef4444", width=4, dash="dot"),
+            name="Emergency Corridor (R_emergency)"
+        ))
+        tls_x, tls_y, tls_text = [], [], []
+        for tl in net.getTrafficLights():
+            node = net.getNode(tl.getID()) if tl.getID() in [n.getID() for n in net.getNodes()] else None
+            coord = node.getCoord() if node else (tl.getEdges()[0].getToNode().getCoord() if tl.getEdges() else None)
+            if coord:
+                tls_x.append(coord[0])
+                tls_y.append(coord[1])
+                tls_text.append(f"TLS: {tl.getID()}")
+        fig.add_trace(go.Scatter(
+            x=tls_x, y=tls_y, mode="markers+text",
+            marker=dict(size=12, color="#38bdf8", symbol="circle", line=dict(width=1.5, color="#ffffff")),
+            text=[t.split("_")[0] for t in tls_text], textposition="top center",
+            hovertext=tls_text, name="Signalized Junctions (18)"
+        ))
+        fig.update_layout(
+            title="<b>OpenStreetMap Real-World Network: Manhattan Midtown (UTM Zone 18N)</b>",
+            template="plotly_dark",
+            paper_bgcolor="rgba(15,23,42,0.6)",
+            plot_bgcolor="rgba(15,23,42,0.3)",
+            xaxis=dict(title="Local Easting (m)", showgrid=True, gridcolor="#1e293b"),
+            yaxis=dict(title="Local Northing (m)", showgrid=True, gridcolor="#1e293b", scaleanchor="x", scaleratio=1),
+            height=460, margin=dict(l=40, r=40, t=50, b=40),
+        )
+        return fig
+    except Exception:
+        return None
+
+
 with tab_network:
     st.markdown("### Urban Road Network Architecture")
 
-    st.write(
-        """
-        The simulation environment models a coordinated urban arterial grid with 4 signalized intersections 
-        arranged in a 2x2 network (I1-I4), connected by bidirectional multilane roadways with perimeter entry/exit feeders.
-        """
+    net_mode = st.radio(
+        "Network Architecture View",
+        options=["Synthetic 2x2 Grid Network", "OpenStreetMap Real-World Network (Manhattan Midtown)"],
+        horizontal=True,
     )
 
-    # Intersection representation
-    nodes = [
-        {"id": "I1", "x": 0, "y": 1, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I2", "x": 1, "y": 1, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I3", "x": 0, "y": 0, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
-        {"id": "I4", "x": 1, "y": 0, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
-    ]
-    df_nodes = pd.DataFrame(nodes)
+    if net_mode == "Synthetic 2x2 Grid Network":
+        st.write(
+            """
+            The default simulation environment models a coordinated urban arterial grid with 4 signalized intersections 
+            arranged in a 2x2 network (I1-I4), connected by bidirectional multilane roadways with perimeter entry/exit feeders.
+            """
+        )
 
-    fig_grid = px.scatter(
-        df_nodes,
-        x="x",
-        y="y",
-        text="id",
-        color="phase",
-        color_discrete_map={"NS_GREEN": "#38bdf8", "EW_GREEN": "#34d399"},
-        size_max=30,
-    )
-    fig_grid.update_traces(marker=dict(size=42, line=dict(width=2, color="#ffffff")), textposition="middle center", textfont=dict(size=14, color="white", family="JetBrains Mono"))
-    fig_grid.update_layout(
-        title="<b>Grid Network Layout (2x2 Signalized Intersections)</b>",
-        template="plotly_dark",
-        paper_bgcolor="rgba(15,23,42,0.6)",
-        plot_bgcolor="rgba(15,23,42,0.3)",
-        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        height=400,
-        margin=dict(l=40, r=40, t=50, b=40),
-    )
-    st.plotly_chart(fig_grid, use_container_width=True)
+        nodes = [
+            {"id": "I1", "x": 0, "y": 1, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
+            {"id": "I2", "x": 1, "y": 1, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
+            {"id": "I3", "x": 0, "y": 0, "phase": "EW_GREEN", "lanes": "N, S, E, W"},
+            {"id": "I4", "x": 1, "y": 0, "phase": "NS_GREEN", "lanes": "N, S, E, W"},
+        ]
+        df_nodes = pd.DataFrame(nodes)
 
-    st.markdown("#### Approach Directions & Signal Assignment")
-    st.dataframe(
-        pd.DataFrame([
-            {"Intersection": "I1", "North": "Queue: 2 | Cap: 50", "South": "Queue: 1 | Cap: 50", "East": "Queue: 4 | Cap: 50", "West": "Queue: 0 | Cap: 50", "Active Phase": "NS Green (30s)"},
-            {"Intersection": "I2", "North": "Queue: 0 | Cap: 50", "South": "Queue: 3 | Cap: 50", "East": "Queue: 1 | Cap: 50", "West": "Queue: 2 | Cap: 50", "Active Phase": "EW Green (60s)"},
-            {"Intersection": "I3", "North": "Queue: 5 | Cap: 50", "South": "Queue: 4 | Cap: 50", "East": "Queue: 0 | Cap: 50", "West": "Queue: 1 | Cap: 50", "Active Phase": "NS Green (60s)"},
-            {"Intersection": "I4", "North": "Queue: 1 | Cap: 50", "South": "Queue: 0 | Cap: 50", "East": "Queue: 3 | Cap: 50", "West": "Queue: 0 | Cap: 50", "Active Phase": "EW Green (30s)"},
-        ]),
-        use_container_width=True,
-    )
+        fig_grid = px.scatter(
+            df_nodes,
+            x="x",
+            y="y",
+            text="id",
+            color="phase",
+            color_discrete_map={"NS_GREEN": "#38bdf8", "EW_GREEN": "#34d399"},
+            size_max=30,
+        )
+        fig_grid.update_traces(marker=dict(size=42, line=dict(width=2, color="#ffffff")), textposition="middle center", textfont=dict(size=14, color="white", family="JetBrains Mono"))
+        fig_grid.update_layout(
+            title="<b>Grid Network Layout (2x2 Signalized Intersections)</b>",
+            template="plotly_dark",
+            paper_bgcolor="rgba(15,23,42,0.6)",
+            plot_bgcolor="rgba(15,23,42,0.3)",
+            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            height=400,
+            margin=dict(l=40, r=40, t=50, b=40),
+        )
+        st.plotly_chart(fig_grid, use_container_width=True)
+
+        st.markdown("#### Approach Directions & Signal Assignment")
+        st.dataframe(
+            pd.DataFrame([
+                {"Intersection": "I1", "North": "Queue: 2 | Cap: 50", "South": "Queue: 1 | Cap: 50", "East": "Queue: 4 | Cap: 50", "West": "Queue: 0 | Cap: 50", "Active Phase": "NS Green (30s)"},
+                {"Intersection": "I2", "North": "Queue: 0 | Cap: 50", "South": "Queue: 3 | Cap: 50", "East": "Queue: 1 | Cap: 50", "West": "Queue: 2 | Cap: 50", "Active Phase": "EW Green (60s)"},
+                {"Intersection": "I3", "North": "Queue: 5 | Cap: 50", "South": "Queue: 4 | Cap: 50", "East": "Queue: 0 | Cap: 50", "West": "Queue: 1 | Cap: 50", "Active Phase": "NS Green (60s)"},
+                {"Intersection": "I4", "North": "Queue: 1 | Cap: 50", "South": "Queue: 0 | Cap: 50", "East": "Queue: 3 | Cap: 50", "West": "Queue: 0 | Cap: 50", "Active Phase": "EW Green (30s)"},
+            ]),
+            use_container_width=True,
+        )
+    else:
+        st.write(
+            """
+            Ingested from OpenStreetMap (Manhattan Midtown bounding box: 40.746N, -73.988W to 40.753N, -73.979W).
+            Compiled via SUMO `netconvert` with WGS84 geographic coordinates, 18 real-world signalized intersections, 
+            and a designated emergency green corridor traversing 6 sequential traffic light junctions.
+            """
+        )
+        osm_fig = load_osm_figure()
+        if osm_fig is not None:
+            st.plotly_chart(osm_fig, use_container_width=True)
+        else:
+            st.info("OSM network model file not found or could not be loaded.")
+
+        st.markdown("#### Geographic Network Metadata")
+        st.dataframe(
+            pd.DataFrame([
+                {"Property": "Geographic Area", "Value": "Manhattan Midtown, New York, NY"},
+                {"Property": "Coordinate System", "Value": "WGS84 UTM Zone 18N (GPS Projected)"},
+                {"Property": "Signalized Intersections", "Value": "18 Traffic Lights"},
+                {"Property": "Emergency Route", "Value": "Route R_emergency (6 consecutive signalized junctions)"},
+                {"Property": "SUMO Configuration", "Value": "sumo/osm/simulation_osm.sumocfg"},
+            ]),
+            use_container_width=True,
+            hide_index=True,
+        )
 
 
 # =============================================================================

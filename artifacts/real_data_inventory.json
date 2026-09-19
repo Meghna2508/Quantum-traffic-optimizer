@@ -1,0 +1,208 @@
+{
+  "generated_at": "2026-09-20",
+  "workspace_branch": "final-integration",
+  "summary": {
+    "real_benchmark_artifacts": 1,
+    "demo_artifacts": 1,
+    "mock_artifacts": 1,
+    "derived_reports": 1,
+    "historical_benchmark_artifacts": 1,
+    "missing_final_integration_benchmark": true
+  },
+  "datasets": [
+    {
+      "name": "benchmark_results.json",
+      "path": "benchmark_results.json",
+      "classification": "HISTORICAL",
+      "source": "run_benchmark.py",
+      "scenario": ["Normal", "Congestion", "Emergency"],
+      "runs": 45,
+      "controllers": ["A-Fixed", "B-Classical", "C-Quantum"],
+      "seeds": [42, 43, 44, 45, 46],
+      "steps": 200,
+      "optimization_interval": 30,
+      "qubo_config": "QUBOConfig()",
+      "qaoa_config": {"p_layers": 1, "shots": 512, "maxiter": 15},
+      "metrics": [
+        "avg_waiting_time",
+        "avg_queue_length",
+        "max_queue_length",
+        "final_throughput",
+        "total_fuel_liters",
+        "total_co2_kg",
+        "wall_time_seconds",
+        "emergency_travel_time",
+        "emergency_corridor_completed",
+        "qaoa_num_calls",
+        "qaoa_num_groups",
+        "qaoa_max_qubits",
+        "qaoa_fallback_count",
+        "qaoa_infeasible_count",
+        "qaoa_avg_exec_time_s",
+        "error"
+      ],
+      "provenance": {
+        "branch": "optimize",
+        "commit": "4e19435",
+        "data_type": "benchmark-output",
+        "verified_by": [
+          "benchmark_results.csv",
+          "run_benchmark.py",
+          "benchmark_results.json"
+        ]
+      }
+    },
+    {
+      "name": "benchmark_results.csv",
+      "path": "benchmark_results.csv",
+      "classification": "HISTORICAL",
+      "source": "run_benchmark.py",
+      "scenario": ["Normal", "Congestion", "Emergency"],
+      "runs": 45,
+      "controllers": ["A-Fixed", "B-Classical", "C-Quantum"],
+      "seeds": [42, 43, 44, 45, 46],
+      "steps": 200,
+      "optimization_interval": 30,
+      "qubo_config": "QUBOConfig()",
+      "qaoa_config": {"p_layers": 1, "shots": 512, "maxiter": 15},
+      "metrics": [
+        "avg_waiting_time",
+        "avg_queue_length",
+        "max_queue_length",
+        "final_throughput",
+        "total_fuel_liters",
+        "total_co2_kg",
+        "wall_time_seconds",
+        "emergency_travel_time",
+        "emergency_corridor_completed",
+        "qaoa_num_calls",
+        "qaoa_num_groups",
+        "qaoa_max_qubits",
+        "qaoa_fallback_count",
+        "qaoa_infeasible_count",
+        "qaoa_avg_exec_time_s",
+        "error"
+      ],
+      "provenance": {
+        "branch": "optimize",
+        "commit": "4e19435",
+        "data_type": "benchmark-output",
+        "verified_by": [
+          "benchmark_results.json",
+          "run_benchmark.py"
+        ]
+      }
+    },
+    {
+      "name": "demo_results.json",
+      "path": "demo_results.json",
+      "classification": "MOCK",
+      "source": "run_hackathon_demo.py",
+      "scenario": ["demo scenario with emergency + congestion"],
+      "runs": 2,
+      "controllers": ["Classical-RuleBased", "Quantum-QAOA"],
+      "seeds": [42],
+      "steps": 100,
+      "optimization_interval": 30,
+      "qubo_config": "QUBOConfig()",
+      "qaoa_config": {"p_layers": 1, "shots": 512, "maxiter": 15},
+      "metrics": [
+        "final_metrics",
+        "step_metrics",
+        "emergency_travel_times",
+        "wall_time_seconds",
+        "avg_waiting_time",
+        "avg_queue_length",
+        "final_throughput",
+        "total_fuel_liters",
+        "total_co2_kg",
+        "throughput",
+        "fuel_liters",
+        "co2_kg"
+      ],
+      "provenance": {
+        "branch": "unknown",
+        "commit": "unknown",
+        "data_type": "demo-output",
+        "verified_by": [
+          "run_hackathon_demo.py",
+          "demo_results.json"
+        ]
+      }
+    },
+    {
+      "name": "pareto.pkl",
+      "path": "pareto.pkl",
+      "classification": "MOCK",
+      "source": "pareto_sweep.py",
+      "scenario": ["frozen ambulance scenario"],
+      "runs": 1,
+      "controllers": ["n/a"],
+      "seeds": ["n/a"],
+      "steps": 15,
+      "optimization_interval": "n/a",
+      "qubo_config": "n/a",
+      "qaoa_config": "n/a",
+      "metrics": [
+        "lam",
+        "amb_saved_s",
+        "network_cost_s",
+        "amb_travel_s",
+        "total_wait_s",
+        "amb_cleared"
+      ],
+      "provenance": {
+        "branch": "unknown",
+        "commit": "unknown",
+        "data_type": "mock-sweep",
+        "verified_by": [
+          "pareto_sweep.py"
+        ]
+      }
+    },
+    {
+      "name": "simulation_performance_report.md",
+      "path": "simulation_performance_report.md",
+      "classification": "DERIVED",
+      "source": "benchmark_results.json",
+      "scenario": ["Normal", "Congestion", "Emergency"],
+      "runs": "derived summary",
+      "controllers": ["A-Fixed", "B-Classical", "C-Quantum"],
+      "seeds": [42, 43, 44, 45, 46],
+      "steps": 200,
+      "optimization_interval": 30,
+      "qubo_config": "derived from benchmark_results.json",
+      "qaoa_config": "derived from benchmark_results.json",
+      "metrics": [
+        "mean wait time",
+        "mean queue length",
+        "mean throughput",
+        "mean fuel",
+        "mean CO2",
+        "mean wall time"
+      ],
+      "provenance": {
+        "branch": "optimize",
+        "commit": "4e19435",
+        "data_type": "derived-summary",
+        "verified_by": [
+          "benchmark_results.json",
+          "simulation_performance_report.md"
+        ]
+      }
+    }
+  ],
+  "missing": [
+    "final-integration benchmark artifact",
+    "Bottleneck scenario results in saved benchmark export",
+    "Incident scenario results in saved benchmark export",
+    "raw QAOA per-call logs",
+    "standalone SUMO per-step trace files",
+    "persisted benchmark logs in .log or .txt format"
+  ],
+  "inconsistencies": [
+    "The benchmark metadata is branch=optimize and commit=4e19435, while the repo is on final-integration.",
+    "The benchmark runner defines five scenarios, but the saved benchmark exports contain only three scenarios.",
+    "The report files are based on the older optimize artifact rather than the current final-integration branch."
+  ]
+}

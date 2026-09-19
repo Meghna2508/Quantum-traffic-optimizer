@@ -86,6 +86,7 @@ class SimulationOrchestrator:
         congestion_clear_step: Optional[int] = None,
         congestion_edge: str = "I1_I2",
         congestion_reduction: float = 0.2,
+        emergency_preemption: bool = False,
     ) -> None:
         self.controller = controller
         self.controller_name = controller_name
@@ -100,6 +101,7 @@ class SimulationOrchestrator:
         self.congestion_clear_step = congestion_clear_step
         self.congestion_edge = congestion_edge
         self.congestion_reduction = congestion_reduction
+        self.emergency_preemption = emergency_preemption
 
     def run(self, progress_callback=None) -> SimulationResult:
         """
@@ -155,6 +157,27 @@ class SimulationOrchestrator:
                 # --- Advance SUMO Simulation ---
                 adapter.step(seconds=1)
 
+                emergency_veh_id = f"emergency_{self.controller_name}"
+                corridor_active = False
+                if self.emergency_preemption and emergency_veh_id in adapter.emergency_vehicles_injected:
+                    if emergency_veh_id not in adapter.emergency_travel_times:
+                        preempted = adapter.apply_emergency_corridor(emergency_veh_id)
+                        if preempted:
+                            corridor_active = True
+                            msg = f"Emergency corridor preempted TLS: {preempted}"
+                            already_logged = any(
+                                "Emergency corridor preempted TLS:" in e
+                                for m in step_metrics_list
+                                for e in m.events
+                            )
+                            if not already_logged:
+                                events.append(msg)
+                    elif adapter._preempted_tls:
+                        restored = adapter.restore_tls_programs()
+                        if restored:
+                            events.append(f"Normal signal programs restored: {restored}")
+                            trigger_optimization = True
+
                 # Check if emergency vehicle completed its route
                 if self.emergency_inject_step and step > self.emergency_inject_step:
                     veh_id = f"emergency_{self.controller_name}"
@@ -169,7 +192,11 @@ class SimulationOrchestrator:
                 if trigger_optimization:
                     network_state = adapter.extract_network_state()
                     decisions = self.controller.get_decisions(network_state)
-                    adapter.apply_signal_decisions(decisions)
+                    if not corridor_active:
+                        adapter.apply_signal_decisions(decisions)
+                    else:
+                        # Keep corridor greens; still record optimizer intent.
+                        pass
 
                     decisions_dict = {
                         iid: d.to_dict() for iid, d in decisions.items()
