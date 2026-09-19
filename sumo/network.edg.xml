@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edges>
+
+    <!-- Top horizontal roads -->
+    <edge id="I1_I2" from="I1" to="I2" numLanes="2" speed="13.89"/>
+    <edge id="I2_I1" from="I2" to="I1" numLanes="2" speed="13.89"/>
+
+    <edge id="I2_I3" from="I2" to="I3" numLanes="2" speed="13.89"/>
+    <edge id="I3_I2" from="I3" to="I2" numLanes="2" speed="13.89"/>
+
+    <edge id="I3_I4" from="I3" to="I4" numLanes="2" speed="13.89"/>
+    <edge id="I4_I3" from="I4" to="I3" numLanes="2" speed="13.89"/>
+
+
+    <!-- Bottom horizontal roads -->
+    <edge id="I5_I6" from="I5" to="I6" numLanes="2" speed="13.89"/>
+    <edge id="I6_I5" from="I6" to="I5" numLanes="2" speed="13.89"/>
+
+    <edge id="I6_I7" from="I6" to="I7" numLanes="2" speed="13.89"/>
+    <edge id="I7_I6" from="I7" to="I6" numLanes="2" speed="13.89"/>
+
+    <edge id="I7_I8" from="I7" to="I8" numLanes="2" speed="13.89"/>
+    <edge id="I8_I7" from="I8" to="I7" numLanes="2" speed="13.89"/>
+
+
+    <!-- Vertical roads -->
+    <edge id="I1_I5" from="I1" to="I5" numLanes="2" speed="13.89"/>
+    <edge id="I5_I1" from="I5" to="I1" numLanes="2" speed="13.89"/>
+
+    <edge id="I2_I6" from="I2" to="I6" numLanes="2" speed="13.89"/>
+    <edge id="I6_I2" from="I6" to="I2" numLanes="2" speed="13.89"/>
+
+    <edge id="I3_I7" from="I3" to="I7" numLanes="2" speed="13.89"/>
+    <edge id="I7_I3" from="I7" to="I3" numLanes="2" speed="13.89"/>
+
+    <edge id="I4_I8" from="I4" to="I8" numLanes="2" speed="13.89"/>
+    <edge id="I8_I4" from="I8" to="I4" numLanes="2" speed="13.89"/>
+
+</edges>
