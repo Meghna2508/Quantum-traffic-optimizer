@@ -14,7 +14,9 @@ def get_traffic_state():
         "waiting_time": metrics["total_waiting_time"],
         "queue_lengths": metrics["queue_lengths"],
         "density": density,
-        "signals": signals
+        "signals": signals,
+        "fuel_consumption": metrics["fuel_consumption"],
+        "co2_emission": metrics["co2_emission"]
     }
 
     return state
