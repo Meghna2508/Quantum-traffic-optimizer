@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2026-09-19 21:35:37",
+    "timestamp": "2026-09-20 01:43:13",
     "steps": 100,
     "interval": 30,
     "quantum_intersections": [
@@ -12,7 +12,7 @@
     "final_metrics": {
       "controller": "Classical-RuleBased",
       "total_steps": 100,
-      "wall_time_seconds": 5.4,
+      "wall_time_seconds": 2.78,
       "final_vehicle_count": 66,
       "final_throughput": 44,
       "avg_waiting_time": 0.99,
@@ -1141,7 +1141,7 @@
     "final_metrics": {
       "controller": "Quantum-QAOA",
       "total_steps": 100,
-      "wall_time_seconds": 6.13,
+      "wall_time_seconds": 7.01,
       "final_vehicle_count": 71,
       "final_throughput": 39,
       "avg_waiting_time": 2.25,
@@ -2276,7 +2276,7 @@
       "optimal_beta": [
         0.7534
       ],
-      "execution_time_seconds": 0.4733,
+      "execution_time_seconds": 0.6738,
       "is_fallback": false
     }
   }
