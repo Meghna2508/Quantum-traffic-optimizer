@@ -17,7 +17,7 @@ import json
 import os
 import sys
 import time
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 
 import sumolib
 
@@ -80,6 +80,8 @@ def run_demo(
     shots: int = 512,
     maxiter: int = 15,
     output_json: str = "demo_results.json",
+    gui_delay_ms: Optional[int] = None,
+    keep_gui_open: bool = False,
 ):
     if quantum_intersections is None:
         # Default 2 intersections for fast yet authentic local QAOA demonstration
@@ -107,6 +109,8 @@ def run_demo(
         total_steps=steps,
         optimization_interval=interval,
         use_gui=use_gui,
+        gui_delay_ms=gui_delay_ms,
+        keep_gui_open=keep_gui_open,
         emergency_inject_step=emergency_step,
         congestion_inject_step=congestion_step,
         congestion_clear_step=congestion_clear_step,
@@ -137,6 +141,8 @@ def run_demo(
         total_steps=steps,
         optimization_interval=interval,
         use_gui=use_gui,
+        gui_delay_ms=gui_delay_ms,
+        keep_gui_open=keep_gui_open,
         intersection_ids=quantum_intersections,
         emergency_inject_step=emergency_step,
         congestion_inject_step=congestion_step,
@@ -301,6 +307,8 @@ def main():
     parser.add_argument("--steps", type=int, default=100, help="Total simulation steps (default: 100)")
     parser.add_argument("--interval", type=int, default=30, help="Optimization interval in steps (default: 30)")
     parser.add_argument("--gui", action="store_true", help="Launch SUMO-GUI instead of headless CLI")
+    parser.add_argument("--gui-delay", type=int, default=None, help="SUMO-GUI delay in milliseconds")
+    parser.add_argument("--keep-gui-open", action="store_true", help="Pause before closing SUMO-GUI after the run")
     parser.add_argument("--emergency-step", type=int, default=35, help="Step to inject emergency vehicle (default: 35)")
     parser.add_argument("--congestion-step", type=int, default=50, help="Step to trigger incident congestion (default: 50)")
     parser.add_argument("--congestion-clear-step", type=int, default=80, help="Step to clear incident congestion (default: 80)")
@@ -327,6 +335,8 @@ def main():
         shots=args.shots,
         maxiter=args.maxiter,
         output_json=args.output,
+        gui_delay_ms=args.gui_delay,
+        keep_gui_open=args.keep_gui_open,
     )
 
 
